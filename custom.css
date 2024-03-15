@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Jost:wght@200;300;400;500;600;700;800;900&family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{  font-family: "DM Sans", sans-serif;}
+ .cc-tab .cc-gra {background: linear-gradient(180deg, #F5F7FF 0%, rgba(240, 243, 255, 0) 100%);  
+  
+ }
+.bg-primary{background-color:#081242;}
+.text-primary{color:#081242;}
+.about-banner{background:   url('img/about-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
+.service-banner{background:   url('img/service-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
+.pricing-banner{background:   url('img/pricing-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
+.contact-banner{background:   url('img/contact-ban.svg'), rgb(0, 0, 0) 100% / cover no-repeat;} 
+.home-banner {background: url('img/static-home.jpg') ; background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center; } 
+
+  .cc-scrollspy li a:active{ font-weight: bold!important;}
+ 
+   
+  
