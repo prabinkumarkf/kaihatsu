@@ -8,18 +8,16 @@
     <link rel="icon" type="image/x-icon" href="img/fav.png">
     <link href="custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script src="custom.js"></script>
-    <script src="src/tailwind.config.js"></script>
+    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+    <link href="./output.css" rel="stylesheet">
 </head>
 
 <body class="custom-grey">
     <nav class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200  ">
         <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-2 sm:p-5">
-            <a href="/" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <a href="./" class="flex items-center space-x-3 rtl:space-x-reverse">
                 <img src="img/logo.svg" class="h-10  sm:h-16" alt="  Logo">
             </a>
             <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
@@ -27,7 +25,7 @@
                     class="text-white bg-[#4E8BE4] hover:bg-black focus:ring-4 focus:outline-none focus:ring-blue-300 text-lg font-medium   px-4 py-3 text-center shadow-[0_17px_35px_0px_#CEDCF2]">Contact
                     Us</a>
                 <button data-collapse-toggle="navbar-sticky" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center  text-base text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200   "
+                    class="inline-flex items-center p-2 w-10 h-10 justify-center  text-base text-para rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200   "
                     aria-controls="navbar-sticky" aria-expanded="false">
                     <span class="sr-only">Open main menu</span>
                     <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
@@ -41,43 +39,127 @@
                 <ul
                     class="flex flex-col p-4 md:p-0 mt-4 text-lg font-normal border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white   ">
                     <li>
-                        <a href="solar.html" class="block py-2 px-3  text-[#4E8BE4] font-bold    md:p-0  "
+                        <a href="solar.html" class="block py-2 px-3 text-active hover:text-secondary text-secondary font-bold    md:p-0  "
                             aria-current="page">Solar</a>
                     </li>
                     <li>
                         <a href="software.html"
-                            class="block py-2 px-3 text-primary hover:text-[#4E8BE4] md:p-0">Software</a>
+                            class="block py-2 px-3 text-primary hover:text-secondary md:p-0">Software</a>
                     </li>
                     <li>
                         <a href="hardware.html"
-                            class="block py-2 px-3 text-primary md:p-0  hover:text-[#4E8BE4]   ">Hardware</a>
+                            class="block py-2 px-3 text-primary md:p-0  hover:text-secondary  ">Hardware</a>
                     </li>
                     <li>
                         <a href="projects.html"
-                            class="block py-2 px-3 text-primary md:p-0  hover:text-[#4E8BE4]   ">Projects</a>
+                            class="block py-2 px-3 text-primary md:p-0  hover:text-secondary  ">Projects</a>
                     </li>
                     <li>
-                        <a href="aboutus.html" class="block py-2 px-3 text-primary md:p-0  hover:text-[#4E8BE4]  ">About
+                        <a href="aboutus.html" class="block py-2 px-3 text-primary md:p-0  hover:text-secondary ">About
                             Us</a>
                     </li>
                     <li>
                         <a href="downloads.html"
-                            class="block py-2 px-3 text-primary md:p-0  hover:text-[#4E8BE4]  ">Downloads</a>
+                            class="block py-2 px-3 text-primary md:p-0  hover:text-secondary ">Downloads</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
+    <div class="grid grid-cols-5">
+        <div class="col-span-2">
+          <h2 class="text-xl font-medium dark:text-white">Navbar</h2>
+      
+          <ul class="sticky top-0" data-hs-scrollspy="#scrollspy-21" data-hs-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-21">
+            <li data-hs-scrollspy-group>
+              <a href="#item-11" class="block py-0.5 text-sm font-medium leading-6 text-blue-700 hover:text-slate-900 focus:outline-none focus:text-blue-600 dark:text-slate-400 dark:hover:text-slate-300 dark:focus:text-blue-500 hs-scrollspy-active:text-secondary dark:hs-scrollspy-active:text-blue-400 active">Item 1</a>
+              <ul>
+                <li class="ms-4">
+                  <a href="#item-1-11" class="group flex items-center gap-x-2 py-0.5 text-sm text-gray-700 leading-6 hover:text-gray-800 focus:outline-none focus:text-blue-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    Item 1-1
+                  </a>
+                </li>
+                <li class="ms-4">
+                  <a href="#item-1-21" class="group flex items-center gap-x-2 py-0.5 text-sm text-gray-700 leading-6 hover:text-gray-800 focus:outline-none focus:text-blue-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    Item 1-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="#item-21" class="block py-0.5 text-sm font-medium leading-6 text-slate-700 hover:text-slate-900 focus:outline-none focus:text-blue-600 dark:text-slate-400 dark:hover:text-slate-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">Item 2</a>
+            </li>
+            <li data-hs-scrollspy-group>
+              <a href="#item-31" class="block py-0.5 text-sm font-medium leading-6 text-slate-700 hover:text-slate-900 focus:outline-none focus:text-blue-600 dark:text-slate-400 dark:hover:text-slate-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">Item 3</a>
+              <ul>
+                <li class="ms-4">
+                  <a href="#item-3-11" class="group flex items-center gap-x-2 py-0.5 text-sm text-gray-700 leading-6 hover:text-gray-800 focus:outline-none focus:text-blue-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    Item 3-1
+                  </a>
+                </li>
+                <li class="ms-4">
+                  <a href="#item-3-21" class="group flex items-center gap-x-2 py-0.5 text-sm text-gray-700 leading-6 hover:text-gray-800 focus:outline-none focus:text-blue-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">
+                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
+                    Item 3-2
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      
+        <div class="col-span-3">
+          <div id="scrollspy-21" class="space-y-4">
+            <div id="item-11">
+              <h3 class="text-lg font-semibold dark:text-white">Item 1</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+            </div>
+      
+            <div id="item-1-11">
+              <h3 class="text-lg font-semibold dark:text-white">Item 1-1</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+            </div>
+      
+            <div id="item-1-21">
+              <h3 class="text-lg font-semibold dark:text-white">Item 1-2</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+            </div>
+      
+            <div id="item-21">
+              <h3 class="text-lg font-semibold dark:text-white">Item 2</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+            </div>
+      
+            <div id="item-31">
+              <h3 class="text-lg font-semibold dark:text-white">Item 3</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+            </div>
+      
+            <div id="item-3-11">
+              <h3 class="text-lg font-semibold dark:text-white">Item 3-1</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+            </div>
+      
+            <div id="item-3-21">
+              <h3 class="text-lg font-semibold dark:text-white">Item 3-2</h3>
+              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
+            </div>
+          </div>
+        </div>
+      </div>
     <section class="bg-[#F6F6F6]">
         <div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl   ">
             <div class="  ">
                 <div class="flex flex-col lg:flex-row">
                     <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
-                        <h2 class="font-sans text-3xl font-normal   text-primary sm:text-5xl sm:leading-none">
+                        <h2 class="text-3xl font-normal   text-primary sm:text-5xl sm:leading-none">
                             Solar</h2>
                     </div>
                     <div class="lg:w-1/2">
-                        <p class="mb-4 text-lg text-gray-500">
+                        <p class="mb-4 text-lg text-para">
                             Allows individuals and businesses to generate their own electricity, reducing dependency on
                             centralized energy grids.
                         </p>
@@ -94,6 +176,7 @@
                 <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  ">
                     <div class="flex flex-col items-center justify-between xl:flex-row">
                         <hr class="my-48">
+
                     </div>
                 </div>
             </div>
@@ -133,12 +216,12 @@
                 <div class="col-span-4 md:pl-10 pl-0">
                     <div id="scrollspy-2" class="space-y-4 ">
                         <div id="whysolar" class="space-y-8">
-                            <h3 class="text-sm text-gray-500   ">>> WHY SOLAR?</h3>
-                            <h3 class="text-2xl font-semibold text-[#081242]">The benefits of solar power are becoming
+                            <h3 class="text-sm text-para   ">>> WHY SOLAR?</h3>
+                            <h3 class="text-2xl font-semibold  text-primary">The benefits of solar power are becoming
                                 increasingly evident. Whether it’s to save money or to help the environment, thousands
                                 of homeowners and businesses are choosing to invest in solar power.</h3>
-                            <h4 class="text-xl font-semibold text-[#081242]">Why Solar?</h4>
-                            <p class="text-base text-gray-500 ">Our ultimate source of energy is Sun. The pivotal point
+                            <h4 class="text-xl font-semibold  text-primary">Why Solar?</h4>
+                            <p class="text-base text-para ">Our ultimate source of energy is Sun. The pivotal point
                                 of our existence. One that breaks a new dawn every morning. Why the sun radiates to the
                                 earth more than 10,000 times the amount of energy that the entire world would consume
                                 annually?. Probably because the high and mighty sun knows better that its energy can be
@@ -150,8 +233,8 @@
                                 And in a world battling with energy crisis and global warming, someday, a far-sighted
                                 company will herald a revolution and the world would see a million suns rising...</p>
                             <img src="img/s1.png">
-                            <h4 class="text-xl font-semibold text-[#081242]">Solar Energy</h4>
-                            <p class="text-base text-gray-500 ">There is no better source of clean and natural energy
+                            <h4 class="text-xl font-semibold  text-primary">Solar Energy</h4>
+                            <p class="text-base text-para ">There is no better source of clean and natural energy
                                 than the sun. It radiates more than 10,000 times the amount of energy that the entire
                                 world would consume annually. Given its abundance, solar energy can cater to the
                                 ever-increasing demand for fuel and make for an efficient source of renewable energy. It
@@ -172,11 +255,11 @@
                             <hr class=" pb-6">
                         </div>
                         <div id="solar-projects" class=" space-y-8 ">
-                            <h3 class="text-sm text-gray-500   ">>> SOLAR PROJECTS</h3>
-                            <h3 class="text-2xl font-semibold text-[#081242]">Following are the projects complete and
+                            <h3 class="text-sm text-para   ">>> SOLAR PROJECTS</h3>
+                            <h3 class="text-2xl font-semibold  text-primary">Following are the projects complete and
                                 role of Kaihatsu in respective projects</h3>
-                            <h4 class="text-xl font-semibold text-[#081242]">Less than MW level Projects:</h4>
-                            <ul class="list-disc list-outside ml-4 space-y-3 text-gray-500 ">
+                            <h4 class="text-xl font-semibold  text-primary">Less than MW level Projects:</h4>
+                            <ul class="list-disc list-outside ml-4 space-y-3 text-para ">
                                 <li class="font-semibold">GUJARAT NARMADA FERTILIZER CORPORATION</li>
                                 <p>5 kW project at GNFC Plant in Bharuch, Gujarat. Kaihatsu roll was total turnkey
                                     solution. This project was done as a contractor for Equinox Systems Pvt. Ltd. We
@@ -194,8 +277,8 @@
                                     Grid Interactive Mega Watt Scale Ground Mounting Solar Photo Voltaic projects.
                                     Following is the list of projects undertaken.</p>
                             </ul>
-                            <h4 class="text-xl font-semibold text-[#081242]">MW level Projects:</h4>
-                            <ul class="list-disc list-outside ml-4 space-y-3 text-gray-500 ">
+                            <h4 class="text-xl font-semibold  text-primary">MW level Projects:</h4>
+                            <ul class="list-disc list-outside ml-4 space-y-3 text-para ">
                                 <li class="font-semibold capitalize">EURO SOLAR POWER PVT LTD</li>
                                 <p>5 MW project at village Sivlakha, Taluka Bhachau, District Kuchch. The roll of
                                     Kaihatsu was Project Coordinator. Kaihatsu took full responsibility of the project.
@@ -229,7 +312,7 @@
                                     Operation and Maintenance contract for this project.</p>
                                 <li class="font-semibold normal-case">ESSEL INFRA PROJECTS LTD</li>
                                 <p>The group is undertaking a 97.5 MW project in different state.</p>
-                                <ul class="list-decimal list-outside ml-4 space-y-3 text-gray-500">
+                                <ul class="list-decimal list-outside ml-4 space-y-3 text-para">
                                     <li class="list-outside">A 11 MW Project in village Nimbal, Taluka Indi, District
                                         Bijapur, State Karnataka. </li>
                                     <li>A 31.5 MW project in village Mansa, District Bhatinda, State Punjab.</li>
@@ -238,8 +321,8 @@
                                 <p>We have been assigned as Project Management Consultants for this project. This
                                     project is under Government bidding.</p>
                             </ul>
-                            <h4 class="text-xl font-semibold text-[#081242]">Overseas Project:</h4>
-                            <ul class="list-disc list-outside ml-4 space-y-3 text-gray-500 ">
+                            <h4 class="text-xl font-semibold  text-primary">Overseas Project:</h4>
+                            <ul class="list-disc list-outside ml-4 space-y-3 text-para ">
                                 <li class="font-semibold capitalize">HIMALAYA INC</li>
                                 <p>20 MW project at Toiechi prefecture, Japan. The roll of Kaihatsu was Design &
                                     Engineering. Kaihatsu took full responsibility of all the design, engineering of
@@ -248,11 +331,11 @@
                             <hr class=" pb-6">
                         </div>
                         <div id="upcomming-projects" class=" space-y-8 ">
-                            <h3 class="text-sm text-gray-500   ">>> UPCOMING PROJECTS</h3>
-                            <h3 class="text-2xl font-semibold text-[#081242]">Solar Projects Under Construction</h3>
-                            <h4 class="text-xl font-semibold text-[#081242]">Following are the projects under
+                            <h3 class="text-sm text-para   ">>> UPCOMING PROJECTS</h3>
+                            <h3 class="text-2xl font-semibold  text-primary">Solar Projects Under Construction</h3>
+                            <h4 class="text-xl font-semibold  text-primary">Following are the projects under
                                 construction and roll of Kaihatsu in respective projects.</h4>
-                            <ul class="list-disc list-outside ml-4 space-y-3 text-gray-500 ">
+                            <ul class="list-disc list-outside ml-4 space-y-3 text-para ">
                                 <li class="font-semibold">ESSEL INFRA PROJECTS LTD (55 MW):</li>
                                 <p>The group is undertaking a 55 MW project in Uttar Pradesh. We have been assigned as
                                     Project Management Consultants for this project. All projects are expected to
@@ -284,11 +367,11 @@
                                     and project is under construction. Expected date for completion is December 2017. We
                                     provide Designing, Engineering, Sourcing and Cost Optimisation solution.</p>
                             </ul>
-                            <h4 class="text-xl font-semibold text-[#081242]">Other than these projects, Kaihatsu has
+                            <h4 class="text-xl font-semibold  text-primary">Other than these projects, Kaihatsu has
                                 also undertaken work in Renewable Energy for product development, consultancy,
                                 Government Consultancy work. Following is the list of work undertaken in these areas.
                             </h4>
-                            <ul class="list-disc list-outside ml-4 space-y-3 text-gray-500 ">
+                            <ul class="list-disc list-outside ml-4 space-y-3 text-para ">
                                 <li class="font-semibold">PAE. LTD</li>
                                 <p>Kaihatsu has worked as Consultant. The main work included product development,
                                     telecom tower solar work, product development and the like. PAE also has a
@@ -317,12 +400,12 @@
                                 <p>Kaihatsu is working as solar consultants.</p>
                                 <hr class=" pb-6">
                         </div>
-                        <div id="assignment-in-solar" class=" space-y-8 text-gray-500 ">
-                            <h3 class="text-sm text-gray-500   ">>> ASSIGNMENT IN SOLAR</h3>
-                            <h3 class="text-2xl font-semibold text-[#081242]">Kaihatsu completed various assignments in
+                        <div id="assignment-in-solar" class=" space-y-8 text-para ">
+                            <h3 class="text-sm text-para   ">>> ASSIGNMENT IN SOLAR</h3>
+                            <h3 class="text-2xl font-semibold  text-primary">Kaihatsu completed various assignments in
                                 solar for 16 MW Grid Interactive Free Field Solar Power Plants & another 15 MW is in
                                 construction phase.</h3>
-                            <h4 class="text-xl font-semibold text-[#081242]">SOLAR PHOTOVOLTAIC MODULE MANUFACTURING
+                            <h4 class="text-xl font-semibold  text-primary">SOLAR PHOTOVOLTAIC MODULE MANUFACTURING
                             </h4>
                             <p>
                                 <strong> Description :</strong>
@@ -357,7 +440,7 @@
                                     <img src="img/s2.png" class="object-none object-left ">
                                 </div>
                             </div>
-                            <h4 class="text-xl font-semibold text-[#081242]">GRID INTERACTIVE SOLAR PHOTO VOLTAIC POWER
+                            <h4 class="text-xl font-semibold  text-primary">GRID INTERACTIVE SOLAR PHOTO VOLTAIC POWER
                                 PLANTS</h4>
                             <p>
                                 <strong> Description :</strong>
@@ -387,7 +470,7 @@
                                 At present Kaihatsu is setting up a power plant of 5 MW in
                                 village Sivlakha, Bhuj, Gujarat for our customer M/s Euro Solar Power Pvt. Ltd.
                             </p>
-                            <h4 class="text-xl font-semibold text-[#081242]">CONCENTRATED SOLAR THERMAL POWER PLANT
+                            <h4 class="text-xl font-semibold  text-primary">CONCENTRATED SOLAR THERMAL POWER PLANT
                             </h4>
                             <p>
                                 <strong> Description :</strong>
@@ -421,7 +504,7 @@
                                     <img src="img/s3.png" class="object-none object-left ">
                                 </div>
                             </div>
-                            <h4 class="text-xl font-semibold text-[#081242]">OFF GRID POWER PLANT FOR SMALL HOUSES,
+                            <h4 class="text-xl font-semibold  text-primary">OFF GRID POWER PLANT FOR SMALL HOUSES,
                                 SCHOOLS, HOSPITAL, IT INDUSTRIES
                             </h4>
                             <p>
@@ -451,7 +534,7 @@
                                     <img src="img/s4.png" class="object-none object-left ">
                                 </div>
                             </div>
-                            <h4 class="text-xl font-semibold text-[#081242]">OFF GRID SYSTEM FOR FARMERS</h4>
+                            <h4 class="text-xl font-semibold  text-primary">OFF GRID SYSTEM FOR FARMERS</h4>
                             <p>
                                 <strong> Description :</strong>
                                 This is a small heat cycle engine which uses Solar
@@ -474,7 +557,7 @@
                                 <strong> Remarks :</strong>
                                 Nil
                             </p>
-                            <h4 class="text-xl font-semibold text-[#081242]">OFF GRID SYSTEM FOR FARMERS
+                            <h4 class="text-xl font-semibold  text-primary">OFF GRID SYSTEM FOR FARMERS
                             </h4>
                             <p>
                                 <strong> Description :</strong>
@@ -509,7 +592,7 @@
                                     <img src="img/s5.png" class="object-none object-left ">
                                 </div>
                             </div>
-                            <h4 class="text-xl font-semibold text-[#081242]">SMALL PRODUCTS, AUTOMATION ITEMS AND
+                            <h4 class="text-xl font-semibold  text-primary">SMALL PRODUCTS, AUTOMATION ITEMS AND
                                 MONITORING SOFTWARE</h4>
                             <p>
                                 <strong> Description :</strong>
@@ -533,7 +616,7 @@
                                 <strong> Remarks :</strong>
                                 Nil
                             </p>
-                            <h4 class="text-xl font-semibold text-[#081242]">INDUSTRIAL HEAT, WATER HEATERS, STEAM
+                            <h4 class="text-xl font-semibold  text-primary">INDUSTRIAL HEAT, WATER HEATERS, STEAM
                                 GENERATORS FOR COOKING
                             </h4>
                             <p>
@@ -586,7 +669,7 @@
                 <input type="text" placeholder="Enter Email"
                     class="w-full sm:w-3/5  p-3 border border-white text-white placeholder-white     bg-gray-50/5">
                 <button type="button"
-                    class="sm:ml-3 ml-0 sm:mt-0 mt-3 inline-flex items-center justify-center bg-white sm:w-1/2 w-full p-3 font-semibold  text-[#4F8CE5]">Subscribe
+                    class="sm:ml-3 ml-0 sm:mt-0 mt-3 inline-flex items-center justify-center bg-white sm:w-1/2 w-full p-3 font-semibold  text-secondary">Subscribe
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="14" fill="#4F8CE5"
                         class="ml-3">
                         <path
@@ -616,7 +699,7 @@
                     class="grid grid-cols-2 gap-5 row-gap-8 md:col-span-2 md:grid-cols-3 lg:col-span-3 justify-items-center">
                     <div class=" ">
                         <p class="font-semibold tracking-wide text-primary text-xl  ">Address</p>
-                        <p class="mt-2 space-y-2 text-gray-600 text-base ">
+                        <p class="mt-2 space-y-2 text-para text-base ">
                             B/36, Ground Floor, Solaris - I <br> Baji Pasalkar Marg, Saki Vihar <br>Andheri (E), Mumbai
                             -
                             400072.
@@ -627,19 +710,19 @@
                         <ul class="mt-2 space-y-2">
                             <li>
                                 <a href="solar.html"
-                                    class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Solar</a>
+                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Solar</a>
                             </li>
                             <li>
                                 <a href="software.html"
-                                    class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Software</a>
+                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Software</a>
                             </li>
                             <li>
                                 <a href="hardware.html"
-                                    class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Hardware</a>
+                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Hardware</a>
                             </li>
                             <li>
                                 <a href="projects.html"
-                                    class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Projects</a>
+                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Projects</a>
                             </li>
                         </ul>
                     </div>
@@ -648,21 +731,21 @@
                         <ul class="mt-2 space-y-2">
                             <li>
                                 <a href="aboutus.html"
-                                    class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">About
+                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">About
                                     Us</a>
                             </li>
                             <li>
                                 <a href="downloads.html"
-                                    class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Downloads</a>
+                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Downloads</a>
                             </li>
                             <li>
                                 <a href="privacypolicy.html"
-                                    class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy
+                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy
                                     policy</a>
                             </li>
                             <li>
                                 <a href="termsandconditions.html"
-                                    class="text-gray-600 transition-colors duration-300 hover:text-deep-purple-accent-400">Terms
+                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Terms
                                     and conditions</a>
                             </li>
                         </ul>
@@ -671,20 +754,20 @@
             </div>
             <div class="lg:grid block md:grid-cols-5 grid-cols-2 gap-4 sm:mt-20 mt-8">
                 <div class="col-start-1 col-end-3  ">
-                    <p class="mt-2 space-y-2 text-gray-600 text-base ">Achieving both efficiency and quality leaves a
+                    <p class="mt-2 space-y-2 text-para text-base ">Achieving both efficiency and quality leaves a
                         lasting
                         impression...</p>
                 </div>
                 <div class="col-start-4 col-end-5 grid lg:justify-items-end justify-items-start">
-                    <p class="mt-2 space-y-2 text-gray-600 text-base "><strong> E-mail:</strong> sales@ktcpl.com</p>
+                    <p class="mt-2 space-y-2 text-para text-base "><strong> E-mail:</strong> sales@ktcpl.com</p>
                 </div>
                 <div class="grid   lg:justify-items-end justify-items-start">
-                    <p class="mt-2 space-y-2 text-gray-600 text-base ">
-                    <div class="flex flex-row text-gray-600">
+                    <p class="mt-2 space-y-2 text-para text-base ">
+                    <div class="flex flex-row text-para">
                         <span class="font-semibold mr-3"> Call:</span>
                         <ul>
-                            <li class="text-gray-600 text-base">+91 22 2857 6348</li>
-                            <li class="text-gray-600 text-base"> +91 22 2857 2188</li>
+                            <li class="text-para text-base">+91 22 2857 6348</li>
+                            <li class="text-para text-base"> +91 22 2857 2188</li>
                         </ul>
                         </p>
                     </div>
@@ -693,24 +776,24 @@
         </div>
         <div class="px-4 mt-12 sm:max-w-xl md:max-w-full lg:max-w-screen-2xl lg:px-8 bg-[#F9F5FF]  mx-auto">
             <div class="flex flex-col justify-between   py-5   sm:flex-row ">
-                <p class="text-gray-600 text-base">
+                <p class="text-para text-base">
                     Kaihatsu Techno Centre Pvt Ltd @2024 All Rights Reserved.
                 </p>
                 <div class="flex items-center mt-4 space-x-4 sm:mt-0">
-                    <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <a href="/" class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#4E8BE4" class="h-5">
                             <path
                                 d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
                         </svg>
                     </a>
-                    <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <a href="/" class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">
                         <svg viewBox="0 0 24 24" fill="#4E8BE4" class="h-5">
                             <path
                                 d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z">
                             </path>
                         </svg>
                     </a>
-                    <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <a href="/" class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">
                         <svg viewBox="0 0 30 30" fill="#4E8BE4" class="h-6">
                             <circle cx="15" cy="15" r="4"></circle>
                             <path
@@ -718,7 +801,7 @@
                             </path>
                         </svg>
                     </a>
-                    <a href="/" class="text-gray-500 transition-colors duration-300 hover:text-deep-purple-accent-400">
+                    <a href="/" class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">
                         <svg viewBox="0 0 24 24" fill="#4E8BE4" class="h-5">
                             <path
                                 d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z">
