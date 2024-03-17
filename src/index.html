@@ -12,7 +12,10 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
    <link href="./output.css" rel="stylesheet">
-   <script src="https://cdn.tailwindcss.com"></script>
+   <script type="text/javascript" src="../node_modules/preline/dist/preline.js"></script>
+    <script
+    type="text/javascript"
+    src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
 
 </head>
 
@@ -42,28 +45,28 @@
             <ul
                class="flex flex-col p-4 md:p-0 mt-4 text-lg font-normal border border-gray-100 rounded-lg  md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:    ">
                <li>
-                  <a href="solar.html" class="block py-2 px-3 text-primary rounded    md:p-0  "
+                  <a href="solar.html" class="block py-2 px-3 text-main rounded    md:p-0  "
                      aria-current="page">Solar</a>
                </li>
                <li>
                   <a href="software.html"
-                     class="block py-2 px-3 text-primary rounded hover:text-primary   md:p-0      ">Software</a>
+                     class="block py-2 px-3 text-main rounded hover:text-main   md:p-0      ">Software</a>
                </li>
                <li>
                   <a href="hardware.html"
-                     class="block py-2 px-3 text-primary rounded   md:p-0  hover:text-primary   ">Hardware</a>
+                     class="block py-2 px-3 text-main rounded   md:p-0  hover:text-main   ">Hardware</a>
                </li>
                <li>
                   <a href="projects.html"
-                     class="block py-2 px-3 text-primary rounded   md:p-0  hover:text-primary   ">Projects</a>
+                     class="block py-2 px-3 text-main rounded   md:p-0  hover:text-main   ">Projects</a>
                </li>
                <li>
                   <a href="aboutus.html"
-                     class="block py-2 px-3 text-primary rounded   md:p-0  hover:text-primary  ">About Us</a>
+                     class="block py-2 px-3 text-main rounded   md:p-0  hover:text-main  ">About Us</a>
                </li>
                <li>
                   <a href="downloads.html"
-                     class="block py-2 px-3 text-primary rounded   md:p-0  hover:text-primary  ">Downloads</a>
+                     class="block py-2 px-3 text-main rounded   md:p-0  hover:text-main  ">Downloads</a>
                </li>
             </ul>
          </div>
@@ -113,7 +116,7 @@
          <div class="  ">
             <div class="flex flex-col lg:flex-row">
                <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
-                  <h2 class="font-sans text-3xl font-normal   text-primary sm:text-5xl sm:leading-none">
+                  <h2 class="font-sans text-3xl font-normal   text-main sm:text-5xl sm:leading-none">
                      Our Key Focuses</h2>
                </div>
                <div class="lg:w-1/2">
@@ -127,7 +130,7 @@
    </section>
    <section>
       <div
-         class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20 text-primary">
+         class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20 text-main">
          <div class="grid gap-5 row-gap-5 mb-8 lg:grid-cols-4 sm:grid-cols-2">
             <a href="/" aria-label="View Item"
                class="inline-block overflow-hidden duration-300 transform hover:shadow-[0_30px_40px_0px_#E6EAF1] hover:border-[#4E8BE4]  border-2 border-transparent hover:border-2 rounded-lg bg-gray-100 hover:bg-[#EEF1FF]">
@@ -192,9 +195,9 @@
          </div>
       </div>
    </section>
-   <section class="cc-tab bg-[#F5F7FF] text-primary py-20 ">
+   <section class="cc-tab bg-[#F5F7FF] text-main py-20 ">
       <div class=" pb-20 max-w-screen-2xl mx-auto">
-         <h2 class="  text-3xl font-normal   text-primary sm:text-5xl sm:leading-none text-center">
+         <h2 class="  text-3xl font-normal   text-main sm:text-5xl sm:leading-none text-center">
             What We Offer
          </h2>
          <p class="mb-4 text-lg text-para text-center">
@@ -203,8 +206,8 @@
       </div>
       <div x-data="   {
    openTab: 3,
-   activeClasses: ' text-primary  font-bold !text-1xl bg-[url(img/dot.svg)] bg-no-repeat bg-center bg-left ml-6',
-   inactiveClasses: ' hover:bg-gray-50 hover:text-primary duration-200',
+   activeClasses: ' text-main  font-bold !text-1xl bg-[url(img/dot.svg)] bg-no-repeat bg-center bg-left ml-6',
+   inactiveClasses: ' hover:bg-gray-50 hover:text-main duration-200',
    }   " class="w-full flex  flex-col md:flex-row max-w-screen-2xl mx-auto ">
          <div class="flex sm:flex-col flex-row flex-wrap  sm:w-3/12 w-full  py-3      gap-4 relative text-[#081242] ">
             <a href="javascript:void(0)" @click="openTab = 1" :class="openTab === 1 ? activeClasses : inactiveClasses"
@@ -427,7 +430,7 @@
          <div class="  ">
             <div class="flex flex-col lg:flex-row">
                <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
-                  <h2 class="font-sans text-3xl font-normal   text-primary sm:text-5xl sm:leading-none">
+                  <h2 class="font-sans text-3xl font-normal   text-main sm:text-5xl sm:leading-none">
                      News & Events </h2>
                </div>
                <div class="lg:w-1/2">
@@ -504,7 +507,7 @@
          </div>
       </div>
    </section>
-   <section class="  bg-[#F5F7FF] text-primary py-20 ">
+   <section class="  bg-[#F5F7FF] text-main py-20 ">
       <div class="px-8   mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl    ">
          <div>
             <div class="flex flex-col lg:flex-row justify-between">
@@ -542,7 +545,7 @@
    <section>
       <div class="px-4 py-20 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20">
          <div class=" pb-20 max-w-screen-2xl mx-auto">
-            <h2 class="  text-3xl font-normal   text-primary sm:text-5xl sm:leading-none text-center">
+            <h2 class="  text-3xl font-normal   text-main sm:text-5xl sm:leading-none text-center">
                Our Gallery
             </h2>
             <p class="  text-lg text-para text-center">
@@ -624,7 +627,7 @@
             <input type="text" placeholder="Enter Email"
                class="sm:w-3/5  p-3 border border-white text-white placeholder-white md:w-2/3 bg-gray-50/5">
             <button type="button"
-               class="sm:ml-3 ml-0 sm:mt-0 mt-3 inline-flex items-center justify-center   sm:w-1/2 w-full p-3 font-semibold bg-white text-secondary">Subscribe
+               class="sm:ml-3 ml-0 sm:mt-0 mt-3 inline-flex items-center justify-center   sm:w-1/2 w-full p-3 font-semibold bg-white text-sub">Subscribe
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="14" fill="#4F8CE5" class="ml-3">
                   <path
                      d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
@@ -638,7 +641,7 @@
          <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-5">
             <div class="md:max-w-md lg:col-span-2">
                <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                  <span class="ml-2   font-semibold   text-primary   text-6xl">Get in touch With Us</span>
+                  <span class="ml-2   font-semibold   text-main   text-6xl">Get in touch With Us</span>
                </a>
                <div class="mt-4 lg:max-w-sm">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="50" height="50" fill="#4E8BE4"
@@ -652,14 +655,14 @@
             <div
                class="grid grid-cols-2 gap-5 row-gap-8 md:col-span-2 md:grid-cols-3 lg:col-span-3 justify-items-center">
                <div class=" ">
-                  <p class="font-semibold tracking-wide text-primary text-xl  ">Address</p>
+                  <p class="font-semibold tracking-wide text-main text-xl  ">Address</p>
                   <p class="mt-2 space-y-2 text-para text-base ">
                      B/36, Ground Floor, Solaris - I <br> Baji Pasalkar Marg, Saki Vihar <br>Andheri (E), Mumbai -
                      400072.
                   </p>
                </div>
                <div class=" ">
-                  <p class="font-semibold tracking-wide text-primary text-xl ">About</p>
+                  <p class="font-semibold tracking-wide text-main text-xl ">About</p>
                   <ul class="mt-2 space-y-2">
                      <li>
                         <a href="solar.html"
@@ -680,7 +683,7 @@
                   </ul>
                </div>
                <div class=" ">
-                  <p class="font-semibold tracking-wide text-primary text-xl ">Additional links</p>
+                  <p class="font-semibold tracking-wide text-main text-xl ">Additional links</p>
                   <ul class="mt-2 space-y-2">
                      <li>
                         <a href="aboutus.html"

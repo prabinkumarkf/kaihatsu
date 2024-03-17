@@ -7,6 +7,15 @@
       @apply text-sm text-para;
     }
     .headb {
-        @apply text-2xl font-semibold  text-primary;
+        @apply text-2xl font-semibold  text-main;
 }
+.headc {
+  @apply text-xl font-semibold  text-main;
+}
+.p {
+  @apply text-base text-para ;
   }
+  .listul{  @apply list-disc list-outside ml-4 space-y-2 text-para;}
+  .hrline{  @apply  space-y-5 h-0.5 border-t-0 bg-gray-200; }
+ 
+}
