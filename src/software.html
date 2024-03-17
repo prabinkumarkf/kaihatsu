@@ -13,7 +13,7 @@
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="./output.css" rel="stylesheet">
     <script type="text/javascript" src="../node_modules/preline/dist/preline.js"></script>
-    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    
 </head>
 
 <body class=" ">
@@ -41,25 +41,23 @@
                 <ul
                     class="flex flex-col p-4 md:p-0 mt-4 text-lg font-normal border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white   ">
                     <li>
-                        <a href="solar.html"
-                            class="block py-2 px-3 text-sec hover:text-sub text-sub font-bold    md:p-0  "
-                            aria-current="page">Solar</a>
+                        <a href="solar.html" class="menuitem" aria-current="page">Solar</a>
                     </li>
                     <li>
-                        <a href="software.html" class="block py-2 px-3 text-main hover:text-sub md:p-0">Software</a>
+                        <a href="software.html" class="menuactive  ">Software</a>
                     </li>
                     <li>
-                        <a href="hardware.html" class="block py-2 px-3 text-main md:p-0  hover:text-sub  ">Hardware</a>
+                        <a href="hardware.html" class="menuitem  ">Hardware</a>
                     </li>
                     <li>
-                        <a href="projects.html" class="block py-2 px-3 text-main md:p-0  hover:text-sub  ">Projects</a>
+                        <a href="projects.html" class="menuitem  ">Projects</a>
                     </li>
                     <li>
-                        <a href="aboutus.html" class="block py-2 px-3 text-main md:p-0  hover:text-sub ">About
+                        <a href="aboutus.html" class="menuitem ">About
                             Us</a>
                     </li>
                     <li>
-                        <a href="downloads.html" class="block py-2 px-3 text-main md:p-0  hover:text-sub ">Downloads</a>
+                        <a href="downloads.html" class="menuitem ">Downloads</a>
                     </li>
                 </ul>
             </div>
@@ -71,12 +69,12 @@
                 <div class="flex flex-col lg:flex-row">
                     <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
                         <h2 class="text-3xl font-normal   text-main sm:text-5xl sm:leading-none">
-                            Solar</h2>
+                            Software</h2>
                     </div>
                     <div class="lg:w-1/2">
-                        <p class="text-lg text-para">
-                            Allows individuals and businesses to generate their own electricity, reducing dependency on
-                            centralized energy grids.
+                        <p class="text-para">
+                            SCADA system meets diverse plant needs with multilingual support & compliance with State
+                            Electricity Boards' reporting requirements.
                         </p>
                     </div>
                 </div>
@@ -86,18 +84,16 @@
     <!-- Banner-->
     <section class="">
         <div class="relative">
-            <img src="img/solar-banner.svg" class="absolute inset-0 object-cover w-full h-full" alt="" />
+            <img src="img/software-banner.svg" class="absolute inset-0 object-cover w-full h-full" alt="" />
             <div class="relative  ">
                 <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  ">
                     <div class="flex flex-col items-center justify-between xl:flex-row">
                         <hr class="my-48">
-
                     </div>
                 </div>
             </div>
         </div>
     </section>
-  
     <section>
         <div class="px-6 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl   ">
             <div class="md:grid grid-cols-5  ">
@@ -105,469 +101,1590 @@
                     <ul class="sticky top-0 cc-scrollspy" data-hs-scrollspy="#scrollspy-2"
                         data-hs-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-2">
                         <li data-hs-scrollspy-group>
-                            <a href="#whysolar"
-                                class="block text-base font-medium leading-6   active:font-bold focus:outline-none hs-scrollspy-active:font-bold border-l-4 border-[#4E8BE4] my-5 py-6 p-4    shadow-xl">WHY
-                                SOLAR</a>
+                            <a href="#scada-system" class="menuitem1">Scada System</a>
                         </li>
                         <li data-hs-scrollspy-group>
-                            <a href="#solar-projects"
-                                class="block py-6  p-4  text-base leading-6  hs-scrollspy-active:text-sub  hs-scrollspy-active:font-bold  focus:border-l-4 focus:border-[#4E8BE4] focus:shadow-2xl">SOLAR
-                                PROJECTS
+                            <a href="#engineering" class="menuitem1">Engineering
                             </a>
                         </li>
                         <li data-hs-scrollspy-group>
-                            <a href="#upcomming-projects"
-                                class="block py-6  p-4  text-base font-medium leading-6 hs-scrollspy-active:text- yellow-600 focus:border-l-4 focus:border-[#4E8BE4] focus:shadow-2xl">UPCOMING
-                                PROJECTS
+                            <a href="#pristine" class="menuitem1">Pristine (SCADA)
                             </a>
                         </li>
                         <li data-hs-scrollspy-group>
-                            <a href="#assignment-in-solar"
-                                class="block py-6  p-4  text-base font-medium leading-6 hs-scrollspy-active:text- yellow-600 focus:border-l-4 focus:border-[#4E8BE4] focus:shadow-2xl">ASSIGNMENT
-                                IN SOLAR
+                            <a href="#business" class="menuitem1">Business
+                            </a>
+                        </li>
+                        <li data-hs-scrollspy-group>
+                            <a href="#bliss-product" class="menuitem1">Bliss Product
+                            </a>
+                        </li>
+                        <li data-hs-scrollspy-group>
+                            <a href="#website" class="menuitem1">Website
                             </a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-span-4 md:pl-10 pl-0">
                     <div id="scrollspy-2" class="space-y-12">
-                        <div id="whysolar" class="space-y-5" data-twe-smooth-scroll-init>
-                            <h3 class="heada">>> WHY SOLAR?</h3>
-                            <h3 class="headb">The benefits of solar power are becoming
-                                increasingly evident. Whether it’s to save money or to help the environment, thousands
-                                of homeowners and businesses are choosing to invest in solar power.</h3>
-                            <h4 class="headc">Why Solar?</h4>
-                            <p class="p">Our ultimate source of energy is Sun. The pivotal point of our existence. One
-                                that breaks a new dawn every morning. Why the sun radiates to the
-                                earth more than 10,000 times the amount of energy that the entire world would consume
-                                annually?. Probably because the high and mighty sun knows better that its energy can be
-                                used in more ways than how the plants photosynthesized, the animals soaked or the
-                                mankind knew. <br>May be the sun understood that many years from its birth, the world
-                                would wake up to see the sun as a clean, efficient, bankable and sustainable source of
-                                renewable energy. Energy that would be cheaper than any kind of power supply, cleaner
-                                with zero CO emissions and accessible to areas where the grid supply could not reach.
-                                And in a world battling with energy crisis and global warming, someday, a far-sighted
-                                company will herald a revolution and the world would see a million suns rising...</p>
-                            <img src="img/s1.png">
-                            <h4 class="headc">Solar Energy</h4>
-                            <p class="text-base text-para ">There is no better source of clean and natural energy
-                                than the sun. It radiates more than 10,000 times the amount of energy that the entire
-                                world would consume annually. Given its abundance, solar energy can cater to the
-                                ever-increasing demand for fuel and make for an efficient source of renewable energy. It
-                                is probably the only source of energy that emits no noise while generating power. In
-                                addition, it is modular, scalable and highly flexible in nature.<br>
-                                In the long run, electricity generated from solar energy systems will be far more
-                                cost-effective than any other type of power supply. Not only can power generation become
-                                profitable at break-even, despite relatively high initial set-up cost, but solar energy
-                                is free from cost escalation.</br>
-                                In remote areas such as rural hamlets, forest reserves, environmentally-sensitive areas
-                                and national parks where grid supply is not available, off-grid standalone and home
-                                lighting systems often serve as a lifeline. Technology development has enabled solar
-                                energy systems to supply power 24x7.</br>
-                                Kaihatsu Solar aims to power Indian communities by providing clean and cost-effective
-                                solar electricity, and is committed to achieving grid parity by 2017. Kaihatsu Solar is
-                                also working to reduce the cost of setting up solar energy systems for bulk power
-                                generation.</p>
+                        <div id="scada-system" class="space-y-5" data-twe-smooth-scroll-init>
+                            <h3 class="heada">>> SCADA SYSTEM</h3>
+                            <div class="flex md:flex-row justify-between flex-col">
+                                <div class=" w-2/3">
+                                    <h3 class="headb">SCADA System for Solar Plants</h3>
+                                    <p class="p">Kaihatsu is also engaged in supplying the plant measurement system.
+                                        This is a complete Supervisory Control and Data Acquisition (SCADA) system.
+                                        Kaihatsu has developed the system. It is installed at various plants. The
+                                        software is available in local languages and satisfies all report requirements
+                                        of State Electricity Boards.</p>
+                                </div>
+                                <div class=" w-1/3">
+                                    <img src="img/scada.jpg">
+                                </div>
+                            </div>
+                            <div class="flex md:flex-row justify-between flex-col">
+                                <div class=" w-2/3">
+                                    <h4 class="headb">Working of SCADA Software</h4>
+                                    <p class="p ">ThThe plant monitoring software, takes the various inputs from plant
+                                        tag points. The detailed analysis is performed on the go. Controlling of the
+                                        plant as well as monitoring is possible. Plant monitoring software gives the
+                                        great advantage in diagnostic, as well as checking the on line efficiency and
+                                        losses of the plant in real time.</p>
+
+                                </div>
+                                <div class="w-1/3">
+                                    <img src="img/scada2.jpg">
+                                </div>
+                            </div>
+                            <h4 class="headc">Some of the features of the software are:</h4>
+                            <p class="p ">Real time analysis of losses w.r.t. radiation pattern. Module level
+                                diagnostics
+                                using thermal imager. Direct SMS for all the faults. All automated Government Reports
+                                and MIS reports in prescribed format.
+                                Web monitoring and control without fix IP. Local language screens & reports.</p>
+                            <div class="flex md:flex-row justify-between flex-col">
+                                <div class="w-2/3">
+                                    <h4 class="headb"> Plant Design</h4>
+
+                                    <p class="p">Depending on the land and contour the optimum plant design will be
+                                        undertaken to generate the maximum output.</p>
+
+                                </div>
+                                <div class="w-1/3">
+                                    <img src="img/scada3.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="hrline">
+                        <div id="engineering" class=" space-y-5  " data-twe-smooth-scroll-init>
+                            <h3 class="heada  ">>> ENGINEERING</h3>
+                            <h3 class="headb">Our Engineering Software Products & Projects</h3>
+                            <h4 class="headc">Pristine Supervisory control & data acquistion system</h4>
+                            <p class="p">This is a complete SCADA system. This is sold as a product by us.We have a full
+                                section giving all the information of this product.<a href="#" class="text-sec">
+                                    Click here</a>  to go to the home page of Pristine SCADA system</p>
+
+                            <h4 class="headc  ">Ladder Editor for programmable logic controller (PLC) </h4>
+
+                            <p class="p">The software is based on Microsoft Windows™ Operating System.It supports almost
+                                all versions of Windows, Windows 95™, Windows 98™, Windows ME™, Windows NT™, Windows
+                                2000™ & Windows XP™.This is a graphics and text editor.This uses standard Ladderlogic
+                                and commands. Cut - Copy - Paste options are available. Once the programme is compiled,
+                                it can be downloaded to the PLC device using a serial port. The drivers for the specific
+                                PLC can be written on request. On Line Error checking, Tool Tip help and movement using
+                                mouse pointer are available. The editor can be programmed for maximum number of memory
+                                usage using the PLC device characteristics. Used memory and available memory are shown
+                                on the editor screen. One can pick up the Ladder symbols from the tool bar. User
+                                configurable commands as well as user can define Products (Hardware & Software) based on
+                                this design are presently sold in India.
+                                One can download the demonstration software by clicking <a
+                                    href="http://ktcpl.com/Website/download/ladder_demo.zip" class="text-sec">
+                                    here</a>. This demonstration works for maximum 50 lines.</p>
+                            <h4 class="headc  ">Instrument controller software</h4>
+                            <p class="p">The software is based on Microsoft Windows™ Operating System.It supports almost
+                                all versions of Windows, Windows 95™, Windows 98™, Windows ME™, Windows NT™, Windows
+                                2000™ & Windows XP™.This is a software which graphically controls, reads and writes a
+                                single instrument.The drivers of the various standard instruments are written as well as
+                                can be written on request. The instrument is read and controlled on the serial port. The
+                                serial port protocol can be customised protocol or standard MODBUS™ protocol. Again the
+                                drivers for the customised protocolcan be written on request. <br>
+                                Due to this software, one can read one instrument or multiple instrumentsusing a
+                                standard PC. The read out data can be stored and graphically represented.The reading can
+                                be obtained on user settable periodic interval.<br>
+                                One of the interesting feature of this product is user can initiallyset the pattern of
+                                the readings called 'profile'.Based on the periodic time interval, an instrument can be
+                                programmed as set by the profile. If there is any mismatch between profile parameters
+                                and actual parameter, alarm can be set.<br>
+                                This software is extremely important to read single instrument or multiple instruments
+                                unattended over a long period of time. One can even programme a complete process
+                                instrumentation, process-wise, time-wise or both. This can be done completely
+                                unattended.<br>
+                                One can download the demonstration software by clicking<a href="mailto:sales@ktcpl.com"
+                                    class="text-sec">
+                                     here.</a> This demonstration works for maximum 60 minutes.</p>
+                            <h4 class="headc  ">Process Control pc software</h4>
+                            <p class="p">Imagine the advantages of controlling process using PC rather than PLC. This
+                                software does exactly that. It is at attractive price that it is cheaper than a PLC
+                                The software is based on Microsoft Windows™ Operating System. It supports almost all
+                                versions of Windows, Windows 95™, Windows 98™, Windows ME™, Windows NT™, Windows 2000™ &
+                                Windows XP™. This is a software which graphically controls, reads and writes multiple
+                                devices on process plant. The drivers of the various standard instruments or devices are
+                                written as well as can be written on request. The instrument is read and controlled on
+                                the serial port. The serial port protocol can be customized protocol or standard MODBUS™
+                                protocol. Again the drivers for the customized protocol can be written on request.<br>
+                                Due to this software, shift the process very easily using the same instrumentation. The
+                                read out data can be stored and graphically represented. The reading can be obtained on
+                                user settable periodic interval.<br>
+                                The shift of the models using same instrumentation and devices like motor control
+                                becomes very easy. Due to single PC control, in one go all the instruments and devices
+                                can be set to produce different model. This becomes a very convenient tool rather than
+                                complex PLC programming. Due to the decrease in the cost of the PC and software this
+                                becomes an easy & convenient solution.<br>
+                                As this software is fully customized for specific applications, please contact us at <a
+                                    href="mailto:sales@ktcpl.com" class="text-sec"> sales@ktcpl.com </a>for your
+                                specific needs and we will
+                                get back to you with our proposal.
+                            </p>
+                            <div class="bg-[#ECF2FC] p-8 mx-9 text-para"> These projects are listed here to show our development
+                                capabilities. The intellectual property rights as well as manufacturing rights may or
+                                may not be with us. However if some one is interested in purchasing these products we
+                                can forward the inquiry to the concern company. Kindly send us you requirement
+                                at<a href="mailto:sales@ktcpl.com" class="text-sec">  sales@ktcpl.com</a></div>
+
 
                         </div>
                         <hr class="hrline">
-                        <div id="solar-projects" class=" space-y-5  " data-twe-smooth-scroll-init>
-                            <h3 class="heada  ">>> SOLAR PROJECTS</h3>
-                            <h3 class="headb">Following are the projects complete and
-                                role of Kaihatsu in respective projects</h3>
-                            <h4 class="headc">Less than MW level Projects:</h4>
-                            <ul class="listul ">
-                                <li class="font-semibold">GUJARAT NARMADA FERTILIZER CORPORATION</li>
-                                <p>5 kW project at GNFC Plant in Bharuch, Gujarat. Kaihatsu roll was total turnkey
-                                    solution. This project was done as a contractor for Equinox Systems Pvt. Ltd. We
-                                    took the full responsibility of the project. This include, project feasibility
-                                    report, detailed bankable project report, supplier selection, finance tie up, plant
-                                    design, construction.</p>
-                                <li class="font-semibold">BRAHMA KUMARI ASHRAM</li>
-                                <p>1 kW to 15 kW meditation rooms. Total numbers of rooms all over India were 250. Each
-                                    room was with different electrical specification. Kaihatsu roll was total turnkey
-                                    solution. This project was done as a contractor for Equinox Systems Pvt. Ltd. We
-                                    took full responsibility of the project. This include, project feasibility report,
-                                    detailed bankable project report, supplier selection, plant design.<br>
-                                    In 2009, Government of India introduced Generation Based Incentive Scheme. Gujarat
-                                    Solar Policy 2009 followed after that. From those years, Kaihatsu got engaged in
-                                    Grid Interactive Mega Watt Scale Ground Mounting Solar Photo Voltaic projects.
-                                    Following is the list of projects undertaken.</p>
+                        <div id="pristine" class=" space-y-5  ">
+                            <h3 class="heada  ">>> PRISTINE (SCADA)</h3>
+                            <h3 class="headb">Pristine (Supervisory Control and Data Acquisition)</h3>
+
+                            <div class="flex md:flex-row justify-between flex-col">
+                                <div class="w-1/2 gap-6 flex flex-col">
+
+                                    <p class="p">We are engaged in designing and development of Supervisory Control And
+                                        Data Acquisition (SCADA) software - Pristine.</p>
+                                    <p class="p"> The complete SCADA software is modular. The basic functional diagram
+                                        of the total system is shown in the figure below. These modules are to be
+                                        dragged on the graphics editor, set the parameters and click 'Run'. The software
+                                        will start by itself.</p>
+                                    <p class="p">
+                                        The modules can be described as:</p>
+
+                                </div>
+                                <div class="w-1/2">
+                                    <img src="img/pristine.jpg">
+                                </div>
+                            </div>
+
+
+                            <h4 class="headc">1. Input module</h4>
+                            <p class="p">This module can be placed multiple times on the Graphics Editor. Each module
+                                can represent one instrument. The data can be picked up on any protocol. RS 232, RS 485,
+                                MOD BUS, PROFI Bus, I2C, LAN or any type of Modem. The pick up registers are other
+                                parameters can be programmed on the editor itself. The algorithm for reading intervals
+                                can be programmed.</p>
+                            <h4 class="headc">2. Real time data collector </h4>
+                            <p class="p">The module collects the data on the real time basis and it uses the algorithm
+                                to store or to generate Alarm and Controls.</p>
+                            <h4 class="headc">3. Data base interface</h4>
+                            <p class="p">The Data Base interface module stores the data in a data base. The data base is
+                                completely user specific. It can be Jet Engine Access, MSSQL, Oracle, PostGress etc.</p>
+                            <h4 class="headc">4. Alaram module </h4>
+                            <p class="p">The Alarm module generates various alarms on the parameters. The mathematical
+                                compound calculation based alarms are also possible. The Alarms can be Audio, Visual.
+                                Also they can be user re-set table or auto-reset table.</p>
+                            <h4 class="headc">5. Data viewer</h4>
+                            <p class="p">The multiple windows data viewer is useful to view any real time data coming
+                                out of any instrument.</p>
+                            <h4 class="headc">6. Graphics & trend viewer</h4>
+                            <p class="p">This is again a multiple window module which gives the graphical representation
+                                of various reading and their comparisons. Various types of colored graphics can be
+                                plotted</p>
+                            <h4 class="headc">7. Statistical analysis & forecasting</h4>
+                            <p class="p">The module based on previous data and ratio can calculate, compute and forecast
+                                the various parameters.</p>
+                            <h4 class="headc">8. Control module </h4>
+                            <p class="p">Based on the parameter, or combination of parameters a control can be defines.
+                                This control can be activated by any PC port like IR, USB, Serial, LAN or specially
+                                designed I/O card.</p>
+                            <ul class="list-disc list-outside ml-4 space-y-2 text-para; ">
+                                <li class="font-semibold">Security</li>
+                                <p class="p">There is a complete user level security. The layout files can be generated
+                                    and used by the different access code users. Hence, using the same hardware, the
+                                    various schema files can be generated based on the application.</p>
+                                <li class="font-semibold">Hardware Need</li>
+                                <p class="p">Any Intel Pentium Based PC with 133 MHz or higher speed. Minimum 64 Mb of
+                                    RAM, Minimum 100 Mb of Hard Disk space. Keyboard, Mouse and color monitor with SVGA
+                                    1,024 X 768 64 color capacity display.</p>
+                                <li class="font-semibold">Operating System</li>
+                                <p class="p">The product is tested on following versions of Microsoft Windows Operating
+                                    System Windows Xp™,Windows 2007™,Windows 2008™,Windows 2010™ , Windows VISTA. </p>
+                                <p class="p"> We also have Android version of Pristine.</p>
                             </ul>
-                            <h4 class="headc">MW level Projects:</h4>
-                            <ul class="listul ">
-                                <li class="font-semibold capitalize">EURO SOLAR POWER PVT LTD</li>
-                                <p>5 MW project at village Sivlakha, Taluka Bhachau, District Kuchch. The roll of
-                                    Kaihatsu was Project Coordinator. Kaihatsu took full responsibility of the project.
-                                    This included, a project feasibility report, a detailed bankable project report,
-                                    weather data setup and collection, supplier selection, finance tie up, plant design,
-                                    contractor selection.</p>
-                                <li class="font-semibold normal-case">JAIHIND PROJECT LTD</li>
-                                <p>5 MW project at village Chadian, Tahasil Santanpur, District Patan. The roll of
-                                    Kaihatsu was Project Management Consultants. Kaihatsu took full responsibility of
-                                    the project. This included, a project feasibility report, a detailed bankable
-                                    project report, weather data setup and collection, supplier selection, finance tie
-                                    up, plant design, contractor selection, construction supervision, commissioning and
-                                    optimisation.</p>
-                                <li class="font-semibold normal-case">RAJESH POWER SERVICES PVT. LTD</li>
-                                <p>1 MW project at village Patadi, Tahasil Dasda, District Surendra Nagar. The roll of
-                                    Kaihatsu was Project Coordinator. Kaihatsu took full responsibility of the project.
-                                    This included a project feasibility report, a detailed bankable project report,
-                                    weather data setup and collection, supplier selection, plant design, contractor
-                                    selection, construction supervision, commissioning and optimisation.</p>
-                                <li class="font-semibold normal-case">CORNER STONE ENERGY PVT. LTD</li>
-                                <p>5 MW project at village Charanka, Tahasil Radhanpur, District Patan. The roll of
-                                    Kaihatsu was as a Consultant. Kaihatsu’s responsibility included, project
-                                    feasibility report, detailed bankable project report, Tender Design for supplier
-                                    selection, Tender Evaluation.</p>
-                                <li class="font-semibold normal-case">YANTRA ESOLAR INDIA PVT. LTD</li>
-                                <p>5 MW project at village Charanka, Tahasil Radhanpur, District Patan. The roll of
-                                    Kaihatsu was Project in Charge. Kaihatsu’s responsibility included, project
-                                    feasibility report, detailed bankable project report, weather data setup and
-                                    collection, supplier selection, plant design, contractor selection, construction
-                                    supervision, commissioning and optimisation. Kaihatsu also signed 10 year’s
-                                    Operation and Maintenance contract for this project.</p>
-                                <li class="font-semibold normal-case">ESSEL INFRA PROJECTS LTD</li>
-                                <p>The group is undertaking a 97.5 MW project in different state.</p>
-                                <ul class="list-decimal list-outside ml-4 space-y-3 text-para">
-                                    <li class="list-outside">A 11 MW Project in village Nimbal, Taluka Indi, District
-                                        Bijapur, State Karnataka. </li>
-                                    <li>A 31.5 MW project in village Mansa, District Bhatinda, State Punjab.</li>
-                                    <li>A 55 MW project in village Orai, District Lucknow, State Uttar Pradesh. </li>
-                                </ul>
-                                <p>We have been assigned as Project Management Consultants for this project. This
-                                    project is under Government bidding.</p>
-                            </ul>
-                            <h4 class="headc">Overseas Project:</h4>
-                            <ul class="listul ">
-                                <li class="font-semibold capitalize">HIMALAYA INC</li>
-                                <p>20 MW project at Toiechi prefecture, Japan. The roll of Kaihatsu was Design &
-                                    Engineering. Kaihatsu took full responsibility of all the design, engineering of
-                                    electrical, mechanical and civil work of the project.</p>
-                            </ul>
+                            <h4 class="headb"> Pristine's SCADA system snapshots</h4>
+                            <div class="grid gap-6 row-gap-5 mb-8 lg:grid-cols-3 sm:row-gap-6 sm:grid-cols-2">
+                                <a href="/" aria-label="View Item">
+                                    <div
+                                        class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                                        <img class="object-cover w-full  " src="img/gal1.svg" alt="">
+                                    </div>
+                                    <p class=" text-base font-medium tracking-wide text-para mt-3">
+                                        <strong>Pristine Main Screen : </strong> The Pristine Main Screen contain all
+                                        modules and Utilities togehter,so that user can access any modules or any
+                                        Utility by using this Pristine Main Screen.
+                                    </p>
+                                </a>
+                                <a href="/" aria-label="View Item">
+                                    <div
+                                        class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                                        <img class="object-cover w-full  " src="img/gal2.svg" alt="">
+                                    </div>
+                                    <p class=" text-base font-medium tracking-wide text-para mt-3">
+                                        <strong> Pristine Data Analysis Module:</strong> This module shows the analysed
+                                        data and also gives a graphical view of the analysed data.
+                                    </p>
+                                </a>
+                                <a href="/" aria-label="View Item">
+                                    <div
+                                        class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                                        <img class="object-cover w-full  " src="img/gal3.svg" alt="">
+                                    </div>
+                                    <p class=" text-base font-medium tracking-wide text-para mt-3">
+                                        <strong> Pristine Data Viewer Module: </strong>The Pristine Data Display Module
+                                        is front-end module that will display the processed data in different forms
+                                    </p>
+                                </a>
+                                <a href="/" aria-label="View Item">
+                                    <div
+                                        class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                                        <img class="object-cover w-full  " src="img/gal4.svg" alt="">
+                                    </div>
+                                    <p class=" text-base font-medium tracking-wide text-para mt-3">
+                                        <strong>Pristine Alarm Module:</strong> A new alarm can be created using the
+                                        Alarm Module and its triggered when events occured at that particular time.
+                                    </p>
+                                </a>
+                                <a href="/" aria-label="View Item">
+                                    <div
+                                        class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                                        <img class="object-cover w-full  " src="img/gal5.svg" alt="">
+                                    </div>
+                                    <p class=" text-base font-medium tracking-wide text-para mt-3">
+                                        <strong> Pristine Task Schedular Module:</strong> The Pristine Task Scheduler
+                                        Module helps you schedule automated tasks that perform actions at a specific
+                                        time or when a certain event occurs.
+                                    </p>
+                                </a>
+                                <a href="/" aria-label="View Item">
+                                    <div
+                                        class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                                        <img class="object-cover w-full  " src="img/gal6.svg" alt="">
+                                    </div>
+                                    <p class="text-base font-medium tracking-wide text-para mt-3">
+                                        <strong> Pristine Data Transfer Module: </strong> This module Upload the files
+                                        according to interval time.
+                                    </p>
+                                </a>
+                                <a href="/" aria-label="View Item">
+                                    <div
+                                        class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                                        <img class="object-cover w-full  " src="img/gal6.svg" alt="">
+                                    </div>
+                                    <p class="text-base font-medium tracking-wide text-para mt-3">
+                                        <strong> Pristine Data Processing Module:</strong> This module process the data
+                                        after a particular interval time.
+                                    </p>
+                                </a>
+                                <a href="/" aria-label="View Item">
+                                    <div
+                                        class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                                        <img class="object-cover w-full  " src="img/gal6.svg" alt="">
+                                    </div>
+                                    <p class="text-base font-medium tracking-wide text-para mt-3">
+                                        <strong> Pristine Schema Generation Module:</strong> The Pristine Schema
+                                        Generation Module will be used for performing operations on schemas.
+                                    </p>
+                                </a>
+                                <a href="/" aria-label="View Item">
+                                    <div
+                                        class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                                        <img class="object-cover w-full  " src="img/gal6.svg" alt="">
+                                    </div>
+                                    <p class="text-base font-medium tracking-wide text-para mt-3">
+                                        <strong> Pristine Data Definition Module:</strong> Users utilize the Data
+                                        Definition Module to access, add, or delete entries stored in tables within the
+                                        database.
+                                    </p>
+                                </a>
+                                <a href="/" aria-label="View Item">
+                                    <div
+                                        class="relative overflow-hidden transition duration-200 transform rounded shadow-lg hover:-translate-y-2 hover:shadow-2xl">
+                                        <img class="object-cover w-full  " src="img/gal6.svg" alt="">
+                                    </div>
+                                    <p class="text-base font-medium tracking-wide text-para mt-3">
+                                        <strong> Pristine Data Report Module: </strong>The Pristine Report Module is
+                                        used to view reports on various Parameters, Instruments, Schemas , Alarm, User
+                                        and Task.
+                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                        <hr class="hrline">
+                        <div id="business" class=" space-y-5  ">
+                            <h3 class="heada  ">>> business</h3>
+                            <h3 class="headb">Customer relation management (CRM) Software - Bliss & Trade </h3>
+
+                            <p class="p">Bliss is trademark registered product of Kaihatsu. This is sold as a complete
+                                box pack product. <a href="http://ktcpl.com/Website/bliss.html" class="text-sec"> Bliss
+                                    CRM Software</a>
+                            </p>
+
+                            <h4 class="headb">Case Binder</h4>
+                            <p class="p">The software is based on Microsoft Windows™ Operating System. It supports
+                                almost all versions of Windows, Windows 95™, Windows 98™, Windows NT™, Windows 2000™,
+                                Windows ME™ & Windows XP™. This is database product. The backend data base is Microsoft
+                                SQL™.<br>
+                                This product records all the information about legal cases in India. This has a powerful
+                                search engine which can search a particular case reference by giving any word or legal
+                                code or any other reference. This is an extremely useful tool for advocates and law
+                                firms. The back end data can be freely exchanged between various input terminals.<br>
+                                Products based on this software are presently sold in India.<br>
+                                One can download the demonstration software by clicking<a
+                                    href="http://ktcpl.com/Website/casebinder_patch1.html" class="text-sec"> </a> here.
+                                This demonstration works for maximum 5 record.
+                            </p>
+                            <h4 class="headb">Mini Enterprise resource planning software (PRO) </h4>
+                            <p class="p">The software is based on Microsoft Windows™ Operating System. It supports
+                                almost all versions of Windows, Windows 95™, Windows 98™, Windows NT™, Windows 2000™,
+                                Windows ME™ & Windows XP™. This is a software for small business houses, manufacturing
+                                units, traders, firms.
+                            </p>
+                            <p class="p">This software integrates all the functions of any business firms. It includes,
+                                finance,purchase, manufacturing, administration, sales and marketing modules. A
+                                specially tuned package for small business houses having all data integration and
+                                security at highly affordable cost. The reports and taxation is tuned for India but the
+                                same can be modified for any other location.
+                            </p>
+                            <p class="p">It was always felt that a small business house needs an integrated system like
+                                ERP because the resources utilized for system are limited. At the same time small
+                                business houses can not afford the ERP package due to high cost. This is a catch22
+                                situation.</p>
+                            <p class="p">The mini ERP package overcomes this situation. It is ideal for small business
+                                houses.Designed with Microsoft Jet Engine™ at backed, it gives secure but non expensive
+                                data base management.</p>
+                            <div class="bg-[#ECF2FC] p-8 mx-9 text-para">These projects are listed here to show our development
+                                capabilities. The intellectual property rights as well as manufacturing rights may or
+                                may not be with us. However if some one is interested in purchasing these products we
+                                can forward the inquiry to the concern company. Kindly send us you requirement at  <a
+                                    href="mailto:sales@ktcpl.com" class="text-sec"> sales@ktcpl.com</a></div>
+
 
 
                         </div>
                         <hr class="hrline">
-                        <div id="upcomming-projects" class=" space-y-5  ">
-                            <h3 class="heada  ">>> UPCOMING PROJECTS</h3>
-                            <h3 class="headb">Solar Projects Under Construction</h3>
-                            <h4 class="headc">Following are the projects under
-                                construction and roll of Kaihatsu in respective projects.</h4>
+                        <div id="bliss-product" class=" space-y-5  text-para ">
+                            <h3 class="heada  ">>> BLISS PRODUCT</h3>
+                            <h3 class="headb">Business Leading Into Success with Smile (BLISS)</h3>
+
+                            <p class="p">
+                                Customer Relation Management is an essence for any business today. From just a small
+                                shop to a huge call centre. A package that can keep customers happy as well as gives a
+                                comfort to manage them is Bliss for every businessman.
+                            </p>
+                            <p class="p">You keep your customers happy with your product but Bliss happily manages them.
+                                A single happy customer is Bliss to business any way.</p>
+                            <p class="p">The software we have can integrate the existing modem of your computer to
+                                support full Telephone protocols and can make your computer in to a call centre.</p>
                             <ul class="listul ">
-                                <li class="font-semibold">ESSEL INFRA PROJECTS LTD (55 MW):</li>
-                                <p>The group is undertaking a 55 MW project in Uttar Pradesh. We have been assigned as
-                                    Project Management Consultants for this project. All projects are expected to
-                                    complete till June 2017. This is under various Government bidding.</p>
-                                <li class="font-semibold">PRENGY, SINGAPORE (5 MW)</li>
-                                <p>This is a 5 MW project in Anantpur district, Andhra Pradesh and we are working as
-                                    turn key solution provider for land selection, technology selection, supplier
-                                    selection, designing, engineering and construction supervision. The project is for
-                                    Captive consumption.</p>
-                                <li class="font-semibold">PRENGY, SINGAPORE (1 MW)</li>
-                                <p>This is a 1 MW project near Hyderabad, Telangana state and we are working as turn key
-                                    solution provider for land selection, technology selection, supplier selection,
-                                    designing, engineering and construction supervision. The project is for Captive
-                                    consumption</p>
-                                <li class="font-semibold">YANTRA GREEN ESOLAR PVT. LTD</li>
-                                <p>This is 5 MW project in Andhra Pradesh. We are working as Owner’s Engineer.</p>
-                                <li class="font-semibold">SHRI RENUKA SUGARS LTD (47 MW)</li>
-                                <p>These are 18 various projects of the capacity 1MW, 2 MW and 3 MW capacity each. We
-                                    are working as turn key solution provider for land selection, technology selection,
-                                    supplier selection, designing, engineering and construction supervision. These
-                                    projects will be in Belgavi District, Karnataka state. They are expected to be
-                                    scheduled by December 2016.</p>
-                                <li class="font-semibold">G SHOES PVT LTD (3.5 MW)</li>
-                                <p>These are seven roof top projects of 500 kW each within the states of Maharashtra,
-                                    Gujarat and Rajasthan. Expected date for completion is September 2016. These are all
-                                    net metering project.</p>
-                                <li class="font-semibold">SAFX TUNISIA (112 MW)</li>
-                                <p>This is single location solar project in Tunisia, North Africa. Design Stage is over
-                                    and project is under construction. Expected date for completion is December 2017. We
-                                    provide Designing, Engineering, Sourcing and Cost Optimisation solution.</p>
+                                <li class="font-semibold">Ease of Operation (EOO):</li>
+                                <p>Bliss is based on Microsoft Windows platform. It does not need any special skills to
+                                    install,customize and operate the product.</p>
+                                <li class="font-semibold">Little resource management (LRM):</li>
+                                <p>Bliss needs very little disk space, memory and CPU resources to operate.The database
+                                    size is of course depends on
+                                    your business.</p>
+                                <li class="font-semibold">User configurable database (UCD):</li>
+                                <p>Bliss offers you a full configurable database design. Choose your own fields, name
+                                    your own fields also make it mandatory the way you want it.All this without any
+                                    database Administrator!</p>
+                                <li class="font-semibold">Multi database support (MDBS):</li>
+                                <p>Multi Database Support (MDBS): Bliss offers you to work with any standard database.
+                                    From stand alone PC Microsoft Jet Engine (Access)™, MSSQL™, Oracle™ and shortly on
+                                    POSTGRES™ too! This means that you can have a database on any platform like
+                                    WindowsNT™, Windows2000™, Novell NetWare™, Linux™ and even on Unix™.</p>
+                                <li class="font-semibold">Rregional language support (RLS):</li>
+                                <p>Bliss gives you a flexibility to have user interface in any standard regional
+                                    language.</p>
+                                <li class="font-semibold">Pre-configured database:</li>
+                                <p>For specific business solutions, Bliss offers a Pre-configured database design.</p>
+                                <li class="font-semibold">Alter database</li>
+                                <p>Bliss allows you to change your database at any time without losing your data.</p>
+                                <li class="font-semibold">Database synchronization:</li>
+                                <p>Bliss allows you to synchronize and unify the database across your branches.</p>
+                                <li class="font-semibold">Full tapi support:</li>
+                                <p>For managing the customers, Bliss offers a full Telephone Application rotocol
+                                    Interface (TAPI).</p>
+                                <li class="font-semibold">Caller identification:</li>
+                                <p>Bliss has an ability to detect the caller identification by displaying a telephone
+                                    number from where the call is placed.</p>
+                                <li class="font-semibold">Caller track transaction (CTT):</li>
+                                <p>Before even you answer the call, Bliss tracks the last transaction you had with the
+                                    client and displays it. You can address the call by personal name to give a surprise
+                                    or wish for Birthday and Anniversary or even track his needs for your product.</p>
+                                <li class="font-semibold">Voice mail merge (VMM):</li>
+                                <p>Introduce your product, or remind all your clients about party invitation by voice
+                                    mail merge.Type a message or read a message and Bliss will call all or selected
+                                    clients and will play the same.</p>
+                                <li class="font-semibold">Paper mail merge:</li>
+                                <p>Customized a single letter to be sent to all the clients. Bliss can do that. You can
+                                    have the letter templates ready for your standard letters.</p>
+                                <li class="font-semibold">SMS Mail Merge:</li>
+                                <p>Bliss can send a same SMS message to all selected customers in one go.</p>
+                                <li class="font-semibold">Email Merge:</li>
+                                <p>In one go, Bliss can send customized email message to all selected customers.</p>
+                                <li class="font-semibold">Paper mail merge:</li>
+                                <p>Bliss can send pager message to all selected pagers in one go.</p>
+                                <li class="font-semibold">Text to speech (T2S):</li>
+                                <p>Type a message and have Bliss to read it for your customer over a phone line.</p>
+                                <li class="font-semibold">Voice recording:</li>
+                                <p>Bliss can record all the incoming calls and store them. This feature can also be
+                                    activated using caller identification.</p>
+                                <li class="font-semibold">Continuous redail:</li>
+                                <p>Have Bliss to redial the busy numbers continuously.</p>
+                                <li class="font-semibold">Management information:</li>
+                                <p>Bliss offers a powerful management information tool to do sales analysis, customer
+                                    analysis.</p>
+                                <li class="font-semibold">Product linking:</li>
+                                <p>Bliss gives a customer and product link.</p>
+                                <li class="font-semibold">Alarams & auto emails:</li>
+                                <p>Bliss can generate audio and visual alarms and can generate reminders on specific
+                                    dates. It also can send an email.</p>
+                                <li class="font-semibold">Customized query:</li>
+                                <p>With Bliss, you can query a database the way you want it.The design of query is as
+                                    simple as any drag drop procedure.</p>
+                                <li class="font-semibold">Expert import and archive:</li>
+                                <p>With Bliss you can import or export the database with the customizable sequence. The
+                                    old data can be archived to save
+                                    the disk space.</p>
+                                <li class="font-semibold">Rapid query logic (RQL):</li>
+                                <p>Bliss uses specially developed query algorithm gives fast results on any database.
+                                </p>
+                                <li class="font-semibold">Character based printer support:</li>
+                                <p>Bliss supports all standard printers. Most important is that it supports the
+                                    character base printing on dot matrix printer. It also supports pre-printed
+                                    stationery. This gives you a fast report printing.</p>
+                                <li class="font-semibold">Full support:</li>
+                                <p>Full technical support, FAQ and all upgrades are available on our website.</p>
+                                <li class="font-semibold">Help:</li>
+                                <p>Online help is available. The printed installation manual is included.</p>
                             </ul>
-                            <h4 class="headc">Other than these projects, Kaihatsu has
-                                also undertaken work in Renewable Energy for product development, consultancy,
-                                Government Consultancy work. Following is the list of work undertaken in these areas.
+                            <div class="bg-[#ECF2FC] p-8 mx-9 text-para" > The Telephone features are completely dependent on type
+                                of modem and type of exchange. Bliss does not come with own modem. If you are not sure
+                                about your telephone exchange facility or the feature support from Modem, we recommend
+                                you to download the test program from the site, before purchasing the product. Your can
+                                download <a href="http://ktcpl.com/Website/testprogram.html" class="text-sec"> Test Program For Modem</a>
+                            </div>
+                            <h3 class="headb">Comparison Chart</h3>
+                            <h4 class="headc">Bliss is actually a combination of Scheduler and Call Centre software.
                             </h4>
-                            <ul class="listul ">
-                                <li class="font-semibold">PAE. LTD</li>
-                                <p>Kaihatsu has worked as Consultant. The main work included product development,
-                                    telecom tower solar work, product development and the like. PAE also has a
-                                    module-manufacturing unit.</p>
-                                <li class="font-semibold">JAIN SOLAR LTD</li>
-                                <p>Kaihatsu has worked as Consultant. The main work includes product development, solar
-                                    water pumps and work on various small solar products like the solar lantern.</p>
-                                <li class="font-semibold">SHASHWAT GREEN ENERGY PVT LTD</li>
-                                <p>Kaihatsu has worked as Consultant. The main work includes product development of
-                                    solar water pumps.</p>
-                                <li class="font-semibold">RESUN SOLAR ENERGY PVT. LTD</li>
-                                <p>Kaihatsu has worked as Consultant and as Product Developer. The main work includes
-                                    product development for a solar street camera system and solar steam generation.</p>
-                                <li class="font-semibold">AHMADABAD MUNICIPAL CORPORATION</li>
-                                <p>Kaihatsu has worked as Consultant. Municipal Corporation is coming up with roof top
-                                    solar system for all their municipal buildings. Kaihatsu’s roll is to formulate the
-                                    tender, evaluate the bids. The project size is for 200 kW roof top.</p>
-                                <li class="font-semibold">SURAT MUNICIPAL CORPORATION</li>
-                                <p>Surat is declared as solar City. Kaihatsu is working as Consultant. Municipal
-                                    Corporation is coming up with a roof top solar system. Kaihatsu’s roll is to
-                                    formulate the tender and evaluate the bids. The project size is 750 kW roof top.</p>
-                                <li class="font-semibold">VELOX ENERGY GENERATION PVT. LTD</li>
-                                <p>Kaihatsu has worked as Consultant. The main work includes system study for micro
-                                    hydro system and 100 kW wind energy systems.</p>
-                                <li class="font-semibold">HEXEN EXPORTS</li>
-                                <p>Kaihatsu is working as solar consultants.</p>
-                            </ul>
+                            <div class="flex justify-center">
+                                <img src="img/compare.png">
+                            </div>
+                            <p>Here is a comparative feature list. This is for the general reference and should not be
+                                taken as an authentic document.</p>
+                            <div class="flex flex-col">
+                                <div class="-m-1.5 overflow-x-auto">
+                                    <div class="p-1.5 min-w-full inline-block align-middle">
+                                        <div class="overflow-hidden">
+                                            <table class="min-w-full    ">
+                                                <thead>
+                                                    <tr class="text-main bg-gray-50">
+                                                        <th scope="col" class="  !text-left">
+                                                            Feature/Software</th>
+                                                        <th scope="col" class="tablehead">
+                                                            Casio sync</th>
+                                                        <th scope="col" class="tablehead">
+                                                            Goldmine</th>
+                                                        <th scope="col" class="tablehead">
+                                                            Organizer</th>
+                                                        <th scope="col" class="tablehead">
+                                                            Outlook</th>
+                                                        <th scope="col" class="tablehead">
+                                                            Tracker</th>
+                                                        <th scope="col" class="tablehead">
+                                                            Bliss</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody class="divide-y   divide-gray-200">
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left  py-5 font-semibold text-para">
+                                                            Address Book</td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left  py-5 font-semibold text-para">
+                                                            Profession wise pre definition</td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            User Configurable</td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Field Configurable</td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Data base</td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            User Configurable
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Multiple in one session
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Choice of Data base
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Network base
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Alterable after installation
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Alterable after entering the data
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Data base synchronization
+                                                        <td>
+                                                            <span class="badge-no">No</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Export ? Import & Archive
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Search and fine
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Alterable after installation
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Alarms visual alarams
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Alarms based on calendar
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Yearly repetitive alarm
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Regional language suppor
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Caller identification and last transaction pop up
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Product linking
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Sales linking
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Cash memo printing
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Character based printing
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Mail Merge
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Email Merge
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Fax Merge
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            SMS Merge
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Pager Merge
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Voice mail Merge
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Text to speech converter
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Speech Processing
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            TAPI support
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Credit card scanner support
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Answering machine
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Continuous radial
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Auto modem detection
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            On line help
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Web support
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Mail template
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Preview and spell check
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Dial a stored number
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Follow up
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Scheduler
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Memo pad
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Appointments
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">Yes</span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-no">no</span>
+                                                        </td>
+                                                    </tr>
+                                                    <tr class="hover:bg-gray-100   text-center">
+                                                        <td class="text-left py-5 font-semibold text-para">
+                                                            Price
+                                                        <td>
+                                                            <span class=" "> </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class=" "> </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class=" "> </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class=" "> </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class=" "> </span>
+                                                        </td>
+                                                        <td>
+                                                            <span class="badge-yes">US $100</span>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class=" font-semibold text-main">Download BLISS PDF Document</a>
+                            <a href="javascript:void(0)"
+                                class="bg-sec  border rounded-md inline-flex items-center justify-center py-3 px-7 text-center text-base font-medium text-white hover:bg-body-color hover:border-body-color disabled:bg-gray-3 disabled:border-gray-3 disabled:text-dark-5">
+                                <span class="pr-[10px]">
+                                    <i class="fa fa-download"> </i>
+                                </span>
+                                Download
+                            </a>
 
                         </div>
                         <hr class="hrline">
-                        <div id="assignment-in-solar" class=" space-y-5  text-para ">
-                            <h3 class="heada  ">>> ASSIGNMENT IN SOLAR</h3>
-                            <h3 class="headb">Kaihatsu completed various assignments in
-                                solar for 16 MW Grid Interactive Free Field Solar Power Plants & another 15 MW is in
-                                construction phase.</h3>
-                            <h4 class="headc">SOLAR PHOTOVOLTAIC MODULE MANUFACTURING
-                            </h4>
+                        <div id="website" class=" space-y-5  text-para ">
+                            <h3 class="heada  ">>> WEBSITE</h3>
+                            <h3 class="headb">Websites Developed by us</h3>
+                            <h4 class="headc">Harbor network system </h4>
                             <p>
-                                <strong> Description :</strong>
-                                Full turn-key project for setting up the manufacturing
-                                unit of Solar Photo Voltaic module. The technology provider can give the technology for
-                                two different types of modules. Amorphous Silicon and thin Film CIGS.The first one is a
-                                well established technology in market so there is a large market demand. However the
-                                cost and availability of Silicon as raw material has forced the market to move on making
-                                a solar cell other than Silicon. Thus CIGS is an emerging technology now
+                                Harbor Network Systems is multi business company. Click<a
+                                    href="http://www.harbornetworks.com/" class=" text-sec">
+                                     http://www.harbornetworks.com</a> to go to their home page.
                             </p>
-                            <div class="flex md:flex-row items-center justify-between flex-col">
-                                <div class="space-y-3">
-                                    <p>
-                                        <strong>Advantages :</strong>
-                                        Large Export and Domestic Market.
-                                    </p>
-                                    <p>
-                                        <strong> What Kaihatsu can do :</strong>
-                                        Technology tie up + project monitoring
-                                    </p>
-                                    <p>
-                                        <strong>Other Information :</strong>
-                                        Government of India special 20% grant of the
-                                        project cost for semiconductor industry is applicable.
-                                    </p>
-                                    <p>
-                                        <strong>Remarks :</strong>
-                                        Nil.
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="img/s2.png" class="  ">
-                                </div>
-                            </div>
-                            <h4 class="headc">GRID INTERACTIVE SOLAR PHOTO VOLTAIC POWER
-                                PLANTS</h4>
-                            <p>
-                                <strong> Description :</strong>
-                                The power plants feeding the electricity to grid. The
-                                plants (size of 1 MW and above) are promoted by Indian Government. Maximum capacity at
-                                present is restricted to 10 MW per stats. However some stats like Rajasthan,West
-                                Bengal,Haryana have made their own policy giving higher rate than central and in some
-                                cases removing the restriction on capacity
-                            </p>
-                            <p>
-                                <strong> Advantages :</strong>
-                                Present rate of Rs. 15/- unit with carbon credits makes
-                                it very attractive financial proposal. The real income will be very high after 10 years
-                                when the plant becomes debt free. The plant life is 30 years and with no need for raw
-                                material it is the best business.
-                            </p>
-                            <p>
-                                <strong> What Kaihatsu can do :</strong>
-                                Full turn key project
-                            </p>
-                            <p>
-                                <strong> Other Information :</strong>
-                                Nil
-                            </p>
-                            <p>
-                                <strong> Remarks :</strong>
-                                At present Kaihatsu is setting up a power plant of 5 MW in
-                                village Sivlakha, Bhuj, Gujarat for our customer M/s Euro Solar Power Pvt. Ltd.
-                            </p>
-                            <h4 class="headc">CONCENTRATED SOLAR THERMAL POWER PLANT
-                            </h4>
-                            <p>
-                                <strong> Description :</strong>
-                                A thermic fluid is heated using mirrors and solar
-                                energy. This fluid makes a steam. This steam can be use to generate the power using
-                                normal steam generator.
-                            </p>
-                            <div class="flex md:flex-row items-center justify-between flex-col">
-                                <div class="space-y-3">
-                                    <p>
-                                        <strong>Advantages :</strong>
-                                        Unlike PV, solar thermal can work in night well as
-                                        with alternate fuel. Unlike PV, the efficiency increases with the heat.Hence
-                                        ideally suited for India.
-                                    </p>
-                                    <p>
-                                        <strong> What Kaihatsu can do :</strong>
-                                        Technology tie up + project monitoring
-                                    </p>
-                                    <p>
-                                        <strong>Other Information :</strong>
-                                        Rajasthan Government has announced a policy
-                                        for Rs. 13.78/- per unit on Solar Thermal.
-                                    </p>
-                                    <p>
-                                        <strong>Remarks :</strong>
-                                        Nil.
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="img/s3.png" class="  ">
-                                </div>
-                            </div>
-                            <h4 class="headc">OFF GRID POWER PLANT FOR SMALL HOUSES,
-                                SCHOOLS, HOSPITAL, IT INDUSTRIES
-                            </h4>
-                            <p>
-                                <strong> Description :</strong>
-                                Wind generators and solar PV is used to charge the
-                                batteries,they produce electricity which is uninterrupted.
-                            </p>
-                            <div class="flex md:flex-row items-center justify-between flex-col">
-                                <div class="space-y-3">
-                                    <p>
-                                        <strong>Advantages :</strong>
-                                        It gives uninterrupted power for 24 hrs. Good for
-                                        hospitals, IT companies, high end houses. Specially good for India as load
-                                        shedding is a problem.
-                                    </p>
-                                    <p>
-                                        <strong> What Kaihatsu can do :</strong>
-                                        System development + system integration
-                                    </p>
-                                    <p>
-                                        <strong>Other Information :</strong>
-                                        Nil.
-                                    </p>
-                                    <p> <strong>Remarks :</strong> Nil.</p>
-                                </div>
-                                <div>
-                                    <img src="img/s4.png" class="  ">
-                                </div>
-                            </div>
-                            <h4 class="headc">OFF GRID SYSTEM FOR FARMERS</h4>
-                            <p>
-                                <strong> Description :</strong>
-                                This is a small heat cycle engine which uses Solar
-                                thermal or any other fuel. This only works for 1 MW or lower. It can use any available
-                                agriculture waste material as a fuel.
-                            </p>
-                            <p>
-                                <strong> Advantages :</strong>
-                                Small systems for farmers, Better control on system.
-                            </p>
-                            <p>
-                                <strong> What Kaihatsu can do :</strong>
-                                Technology tie up + project monitoring
-                            </p>
-                            <p>
-                                <strong> Other Information :</strong>
-                                Nil
-                            </p>
-                            <p>
-                                <strong> Remarks :</strong>
-                                Nil
-                            </p>
-                            <h4 class="headc">OFF GRID SYSTEM FOR FARMERS
-                            </h4>
-                            <p>
-                                <strong> Description :</strong>
-                                This is a based on concentrating dish and sterling
-                                engine. The sterling engine is a small heat engine can generate power for small house(s)
-                                10KW or 25 KW. Effective for agriculture as no need of long cables. Independently
-                                monitored system.
-                            </p>
-                            <div class="flex md:flex-row items-center justify-between flex-col">
-                                <div class="space-y-3">
-                                    <p>
-                                        <strong>Advantages :</strong>
-                                        Rather than giving the free electricity to farmers,
-                                        they can be given dish through financial agencies like NABARD. This will remove
-                                        the burden on utility companies. NABARD can earn interest and carbon credits.
-                                    </p>
-                                    <p>
-                                        <strong> What Kaihatsu can do :</strong>
-                                        Technology tie up + Coordination for
-                                        engine development.
-                                    </p>
-                                    <p>
-                                        <strong>Other Information :</strong>
-                                        The system is only up to 25KW
-                                    </p>
-                                    <p>
-                                        <strong>Remarks :</strong>
-                                        Nil.
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="img/s5.png" class="  ">
-                                </div>
-                            </div>
-                            <h4 class="headc">SMALL PRODUCTS, AUTOMATION ITEMS AND
-                                MONITORING SOFTWARE</h4>
-                            <p>
-                                <strong> Description :</strong>
-                                Lot of small items like solar latern, mobile chargers,
-                                toys battery chargers, street lights, garden lights can be developed using solar, wind
-                                or both.
-                            </p>
-                            <p>
-                                <strong> Advantages :</strong>
-                                Ancillary development + increase of product range.
-                            </p>
-                            <p>
-                                <strong> What Kaihatsu can do :</strong>
-                                Full development.
-                            </p>
-                            <p>
-                                <strong> Other Information :</strong>
-                                Nil
-                            </p>
-                            <p>
-                                <strong> Remarks :</strong>
-                                Nil
-                            </p>
-                            <h4 class="headc">INDUSTRIAL HEAT, WATER HEATERS, STEAM
-                                GENERATORS FOR COOKING
-                            </h4>
-                            <p>
-                                <strong> Description :</strong>
-                                Other application.
-                            </p>
-                            <div class="flex md:flex-row items-center justify-between flex-col">
-                                <div class="space-y-3">
-                                    <p>
-                                        <strong>Advantages :</strong>
-                                        Ancillary development + increase of product range.
-                                    </p>
-                                    <p>
-                                        <strong> What Kaihatsu can do :</strong>
-                                        Not much role.
-                                    </p>
-                                    <p>
-                                        <strong>Other Information :</strong>
-                                        The system is only up to 25KW
-                                    </p>
-                                    <p>
-                                        <strong>Remarks :</strong>
-                                        Nil.
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="img/s6.png" class="  ">
-                                </div>
-                            </div>
 
+                            <h4 class="headc">Lokmanya tilak municipal medical college (SION HOSPITAL)</h4>
+                            <p>Lokmanya Tilak Municipal Medical College popularly known as Sion Hospital is one of the
+                                esteem organisations in Mumbai. The largest trauma centre in Mumbai. The site gives all
+                                the details and the facilities about the hospital. Click http://www.ltmmc.org to go to
+                                their home page.
+                            </p>
+                            <div class="bg-[#ECF2FC] p-8 mx-9 text-para"> These projects are listed here to show our development capabilities. The intellectual property rights as well as manufacturing rights may or may not be with us. However if some one is interested in purchasing these products we can forward the inquiry to the concern company. Kindly send us you requirement at<a href="mailto:sales@ktcpl.com" class="text-sec">  sales@ktcpl.com</a>
+                            </div>
 
                         </div>
                     </div>
@@ -575,6 +1692,7 @@
             </div>
         </div>
     </section>
+
     <!-- Newsletter-->
     <section class="py-24  bg-[url('img/newsetter-bg.svg')] bg-cover bg-no-repeat">
         <div class="max-w-screen-2xl mx-auto">

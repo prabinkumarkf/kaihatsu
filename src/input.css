@@ -3,19 +3,25 @@
 @tailwind utilities;
  
 @layer components {
+  .menuactive{@apply font-bold text-sec block py-2 px-3 md:p-0  hover:text-sec;}
+  .menuitem{@apply block py-2 px-3 text-main md:p-0  hover:text-sec;}
+  .menuitem1{@apply block py-6  p-4  text-base leading-6  hs-scrollspy-active:text-sec  hs-scrollspy-active:font-bold  focus:border-l-4 focus:border-[#4E8BE4] focus:shadow-2xl;} 
+  .menuactive1{@apply block text-base font-medium leading-6   active:font-bold focus:outline-none hs-scrollspy-active:font-bold border-l-4 border-[#4E8BE4] my-5 py-6 p-4    shadow-xl;}
     .heada {
       @apply text-sm text-para;
     }
     .headb {
-        @apply text-2xl font-semibold  text-main;
+        @apply text-2xl font-semibold  text-main capitalize;
 }
 .headc {
-  @apply text-xl font-semibold  text-main;
+  @apply text-xl font-semibold  text-main capitalize;
 }
 .p {
   @apply text-base text-para ;
   }
   .listul{  @apply list-disc list-outside ml-4 space-y-2 text-para;}
   .hrline{  @apply  space-y-5 h-0.5 border-t-0 bg-gray-200; }
- 
+ .tablehead{@apply px-6 py-5 text-start   font-semibold text-main;}
+ .badge-yes {@apply capitalize inline-flex items-center rounded-2xl bg-[#8BE78F]/30 px-3 py-1 text-xs font-medium text-[#22CC29]   ring-[#22CC29];}
+ .badge-no {@apply capitalize inline-flex items-center rounded-2xl bg-[#EE9B9B]/30 px-3   text-center py-1 text-xs font-medium text-[#FF0000]   ring-[#FF0000];}
 }

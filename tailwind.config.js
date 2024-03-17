@@ -7,8 +7,7 @@ module.exports = {
   content: [
     "./src/**/*.{html,js}",
     "./src/scripts/**/*.js",
-    "./node_modules/preline/dist/*.js",
-    "./node_modules/tw-elements/js/**/*.js"
+    "./node_modules/preline/dist/*.js", 
   ],
 
   theme: {
@@ -31,6 +30,6 @@ module.exports = {
   plugins: [ 
     require("@tailwindcss/forms"),
     require('preline/plugin'),
-    require("tw-elements/plugin.cjs"),
+    
   ],
 };
