@@ -12,6 +12,8 @@
    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
    <link href="./output.css" rel="stylesheet">
+   <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 
 <body class="custom-grey">
@@ -202,7 +204,7 @@
       <div x-data="   {
    openTab: 3,
    activeClasses: ' text-primary  font-bold !text-1xl bg-[url(img/dot.svg)] bg-no-repeat bg-center bg-left ml-6',
-   inactiveClasses: ' hover:bg-primary hover:text-primary duration-200',
+   inactiveClasses: ' hover:bg-gray-50 hover:text-primary duration-200',
    }   " class="w-full flex  flex-col md:flex-row max-w-screen-2xl mx-auto ">
          <div class="flex sm:flex-col flex-row flex-wrap  sm:w-3/12 w-full  py-3      gap-4 relative text-[#081242] ">
             <a href="javascript:void(0)" @click="openTab = 1" :class="openTab === 1 ? activeClasses : inactiveClasses"

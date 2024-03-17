@@ -2,3 +2,11 @@
 @tailwind components;
 @tailwind utilities;
  
+@layer components {
+    .heada {
+      @apply text-sm text-para;
+    }
+    .headb {
+        @apply text-2xl font-semibold  text-primary;
+}
+  }

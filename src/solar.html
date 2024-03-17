@@ -6,15 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="icon" type="image/x-icon" href="img/fav.png">
-    <link href="custom.css" rel="stylesheet">
+    <link href="./custom.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-
+    <script src="./custom.js"> </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
     <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
     <link href="./output.css" rel="stylesheet">
+    <script src="../node_modules/preline/dist/preline.js"></script>
+
 </head>
 
 <body class="custom-grey">
+
     <nav class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200  ">
         <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-2 sm:p-5">
             <a href="./" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -39,7 +42,8 @@
                 <ul
                     class="flex flex-col p-4 md:p-0 mt-4 text-lg font-normal border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white   ">
                     <li>
-                        <a href="solar.html" class="block py-2 px-3 text-active hover:text-secondary text-secondary font-bold    md:p-0  "
+                        <a href="solar.html"
+                            class="block py-2 px-3 text-active hover:text-secondary text-secondary font-bold    md:p-0  "
                             aria-current="page">Solar</a>
                     </li>
                     <li>
@@ -66,90 +70,7 @@
             </div>
         </div>
     </nav>
-    <div class="grid grid-cols-5">
-        <div class="col-span-2">
-          <h2 class="text-xl font-medium dark:text-white">Navbar</h2>
-      
-          <ul class="sticky top-0" data-hs-scrollspy="#scrollspy-21" data-hs-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-21">
-            <li data-hs-scrollspy-group>
-              <a href="#item-11" class="block py-0.5 text-sm font-medium leading-6 text-blue-700 hover:text-slate-900 focus:outline-none focus:text-blue-600 dark:text-slate-400 dark:hover:text-slate-300 dark:focus:text-blue-500 hs-scrollspy-active:text-secondary dark:hs-scrollspy-active:text-blue-400 active">Item 1</a>
-              <ul>
-                <li class="ms-4">
-                  <a href="#item-1-11" class="group flex items-center gap-x-2 py-0.5 text-sm text-gray-700 leading-6 hover:text-gray-800 focus:outline-none focus:text-blue-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">
-                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-                    Item 1-1
-                  </a>
-                </li>
-                <li class="ms-4">
-                  <a href="#item-1-21" class="group flex items-center gap-x-2 py-0.5 text-sm text-gray-700 leading-6 hover:text-gray-800 focus:outline-none focus:text-blue-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">
-                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-                    Item 1-2
-                  </a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="#item-21" class="block py-0.5 text-sm font-medium leading-6 text-slate-700 hover:text-slate-900 focus:outline-none focus:text-blue-600 dark:text-slate-400 dark:hover:text-slate-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">Item 2</a>
-            </li>
-            <li data-hs-scrollspy-group>
-              <a href="#item-31" class="block py-0.5 text-sm font-medium leading-6 text-slate-700 hover:text-slate-900 focus:outline-none focus:text-blue-600 dark:text-slate-400 dark:hover:text-slate-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">Item 3</a>
-              <ul>
-                <li class="ms-4">
-                  <a href="#item-3-11" class="group flex items-center gap-x-2 py-0.5 text-sm text-gray-700 leading-6 hover:text-gray-800 focus:outline-none focus:text-blue-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">
-                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-                    Item 3-1
-                  </a>
-                </li>
-                <li class="ms-4">
-                  <a href="#item-3-21" class="group flex items-center gap-x-2 py-0.5 text-sm text-gray-700 leading-6 hover:text-gray-800 focus:outline-none focus:text-blue-600 dark:text-gray-400 dark:hover:text-gray-300 dark:focus:text-blue-500 hs-scrollspy-active:text-blue-600 dark:hs-scrollspy-active:text-blue-400">
-                    <svg class="flex-shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m9 18 6-6-6-6"/></svg>
-                    Item 3-2
-                  </a>
-                </li>
-              </ul>
-            </li>
-          </ul>
-        </div>
-      
-        <div class="col-span-3">
-          <div id="scrollspy-21" class="space-y-4">
-            <div id="item-11">
-              <h3 class="text-lg font-semibold dark:text-white">Item 1</h3>
-              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            </div>
-      
-            <div id="item-1-11">
-              <h3 class="text-lg font-semibold dark:text-white">Item 1-1</h3>
-              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            </div>
-      
-            <div id="item-1-21">
-              <h3 class="text-lg font-semibold dark:text-white">Item 1-2</h3>
-              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            </div>
-      
-            <div id="item-21">
-              <h3 class="text-lg font-semibold dark:text-white">Item 2</h3>
-              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            </div>
-      
-            <div id="item-31">
-              <h3 class="text-lg font-semibold dark:text-white">Item 3</h3>
-              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            </div>
-      
-            <div id="item-3-11">
-              <h3 class="text-lg font-semibold dark:text-white">Item 3-1</h3>
-              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            </div>
-      
-            <div id="item-3-21">
-              <h3 class="text-lg font-semibold dark:text-white">Item 3-2</h3>
-              <p class="mt-1 text-sm leading-6 text-gray-600 dark:text-gray-400">This is some placeholder content for the scrollspy page. Note that as you scroll down the page, the appropriate navigation link is highlighted. It's repeated throughout the component example. We keep adding some more example copy here to emphasize the scrolling and highlighting.</p>
-            </div>
-          </div>
-        </div>
-      </div>
+
     <section class="bg-[#F6F6F6]">
         <div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl   ">
             <div class="  ">
@@ -159,7 +80,7 @@
                             Solar</h2>
                     </div>
                     <div class="lg:w-1/2">
-                        <p class="mb-4 text-lg text-para">
+                        <p class="text-lg text-para">
                             Allows individuals and businesses to generate their own electricity, reducing dependency on
                             centralized energy grids.
                         </p>
@@ -182,7 +103,9 @@
             </div>
         </div>
     </section>
+
     <section>
+
         <div class="px-6 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl   ">
             <div class="md:grid grid-cols-5  ">
                 <div class="md:col-span-1 col-span-1 ">
@@ -190,12 +113,12 @@
                         data-hs-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-2">
                         <li data-hs-scrollspy-group>
                             <a href="#whysolar"
-                                class="block text-base font-medium leading-6   active:font-bold focus:outline-none hs-scrollspy-active:text-blue-600 border-l-4 border-[#4E8BE4] my-5 py-6 p-4  hs-scrollspy-active:text-blue-600 shadow-2xl">WHY
+                                class="block text-base font-medium leading-6   active:font-bold focus:outline-none hs-scrollspy-active:font-bold border-l-4 border-[#4E8BE4] my-5 py-6 p-4    shadow-2xl">WHY
                                 SOLAR</a>
                         </li>
                         <li data-hs-scrollspy-group>
                             <a href="#solar-projects"
-                                class="block py-6  p-4  text-base font-medium leading-6  hs-scrollspy-active:text-blue-600  focus:border-l-4 focus:border-[#4E8BE4] focus:shadow-2xl">SOLAR
+                                class="block py-6  p-4  text-base leading-6  hs-scrollspy-active:text-secondary  hs-scrollspy-active:font-bold  focus:border-l-4 focus:border-[#4E8BE4] focus:shadow-2xl">SOLAR
                                 PROJECTS
                             </a>
                         </li>
@@ -216,8 +139,8 @@
                 <div class="col-span-4 md:pl-10 pl-0">
                     <div id="scrollspy-2" class="space-y-4 ">
                         <div id="whysolar" class="space-y-8">
-                            <h3 class="text-sm text-para   ">>> WHY SOLAR?</h3>
-                            <h3 class="text-2xl font-semibold  text-primary">The benefits of solar power are becoming
+                            <h3 class="heada">>> WHY SOLAR?</h3>
+                            <h3 class="headb">The benefits of solar power are becoming
                                 increasingly evident. Whether it’s to save money or to help the environment, thousands
                                 of homeowners and businesses are choosing to invest in solar power.</h3>
                             <h4 class="text-xl font-semibold  text-primary">Why Solar?</h4>
@@ -252,7 +175,7 @@
                                 solar electricity, and is committed to achieving grid parity by 2017. Kaihatsu Solar is
                                 also working to reduce the cost of setting up solar energy systems for bulk power
                                 generation.</p>
-                            <hr class=" pb-6">
+                            <hr class="pb-6 border-para divide-y divide-gray-400 divide-solid">
                         </div>
                         <div id="solar-projects" class=" space-y-8 ">
                             <h3 class="text-sm text-para   ">>> SOLAR PROJECTS</h3>
@@ -328,7 +251,7 @@
                                     Engineering. Kaihatsu took full responsibility of all the design, engineering of
                                     electrical, mechanical and civil work of the project.</p>
                             </ul>
-                            <hr class=" pb-6">
+                            <hr class="pb-6 border-para divide-y divide-gray-400 divide-solid">
                         </div>
                         <div id="upcomming-projects" class=" space-y-8 ">
                             <h3 class="text-sm text-para   ">>> UPCOMING PROJECTS</h3>
@@ -398,7 +321,8 @@
                                     hydro system and 100 kW wind energy systems.</p>
                                 <li class="font-semibold">HEXEN EXPORTS</li>
                                 <p>Kaihatsu is working as solar consultants.</p>
-                                <hr class=" pb-6">
+                            </ul>
+                            <hr class="pb-6 border-para divide-y divide-gray-400 divide-solid">
                         </div>
                         <div id="assignment-in-solar" class=" space-y-8 text-para ">
                             <h3 class="text-sm text-para   ">>> ASSIGNMENT IN SOLAR</h3>
@@ -416,7 +340,7 @@
                                 cost and availability of Silicon as raw material has forced the market to move on making
                                 a solar cell other than Silicon. Thus CIGS is an emerging technology now
                             </p>
-                            <div class="flex flex-row items-center justify-between">
+                            <div class="flex md:flex-row items-center justify-between flex-col">
                                 <div class="space-y-3">
                                     <p>
                                         <strong>Advantages :</strong>
@@ -437,7 +361,7 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <img src="img/s2.png" class="object-none object-left ">
+                                    <img src="img/s2.png" class="  ">
                                 </div>
                             </div>
                             <h4 class="text-xl font-semibold  text-primary">GRID INTERACTIVE SOLAR PHOTO VOLTAIC POWER
@@ -478,7 +402,7 @@
                                 energy. This fluid makes a steam. This steam can be use to generate the power using
                                 normal steam generator.
                             </p>
-                            <div class="flex flex-row items-center justify-between">
+                            <div class="flex md:flex-row items-center justify-between flex-col">
                                 <div class="space-y-3">
                                     <p>
                                         <strong>Advantages :</strong>
@@ -501,7 +425,7 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <img src="img/s3.png" class="object-none object-left ">
+                                    <img src="img/s3.png" class="  ">
                                 </div>
                             </div>
                             <h4 class="text-xl font-semibold  text-primary">OFF GRID POWER PLANT FOR SMALL HOUSES,
@@ -512,7 +436,7 @@
                                 Wind generators and solar PV is used to charge the
                                 batteries,they produce electricity which is uninterrupted.
                             </p>
-                            <div class="flex flex-row items-center justify-between">
+                            <div class="flex md:flex-row items-center justify-between flex-col">
                                 <div class="space-y-3">
                                     <p>
                                         <strong>Advantages :</strong>
@@ -531,7 +455,7 @@
                                     <p> <strong>Remarks :</strong> Nil.</p>
                                 </div>
                                 <div>
-                                    <img src="img/s4.png" class="object-none object-left ">
+                                    <img src="img/s4.png" class="  ">
                                 </div>
                             </div>
                             <h4 class="text-xl font-semibold  text-primary">OFF GRID SYSTEM FOR FARMERS</h4>
@@ -566,7 +490,7 @@
                                 10KW or 25 KW. Effective for agriculture as no need of long cables. Independently
                                 monitored system.
                             </p>
-                            <div class="flex flex-row items-center justify-between	">
+                            <div class="flex md:flex-row items-center justify-between flex-col">
                                 <div class="space-y-3">
                                     <p>
                                         <strong>Advantages :</strong>
@@ -589,7 +513,7 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <img src="img/s5.png" class="object-none object-left ">
+                                    <img src="img/s5.png" class="  ">
                                 </div>
                             </div>
                             <h4 class="text-xl font-semibold  text-primary">SMALL PRODUCTS, AUTOMATION ITEMS AND
@@ -623,7 +547,7 @@
                                 <strong> Description :</strong>
                                 Other application.
                             </p>
-                            <div class="flex flex-row items-center justify-between	">
+                            <div class="flex md:flex-row items-center justify-between flex-col">
                                 <div class="space-y-3">
                                     <p>
                                         <strong>Advantages :</strong>
@@ -643,10 +567,11 @@
                                     </p>
                                 </div>
                                 <div>
-                                    <img src="img/s6.png" class="object-none object-left ">
+                                    <img src="img/s6.png" class="  ">
                                 </div>
                             </div>
-                            <hr class=" pb-6">
+
+
                         </div>
                     </div>
                 </div>

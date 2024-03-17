@@ -1,9 +1,14 @@
 /** @type {import('tailwindcss').Config} */
-const plugin = require('tailwindcss/plugin')
+const plugin = require("tailwindcss/plugin"); 
+const defaultTheme = require('tailwindcss/defaultTheme')
 
 module.exports = {
-  content: ["./src/**/*.{html,js,css}"
-  '/node_modules/preline/preline.js',],
+  content: [
+    "./src/**/*.{html,js}",
+    "./src/scripts/**/*.js",
+    "../node_modules/preline/dist/*.js",
+  ],
+
   theme: {
     colors: {
       transparent: "transparent",
@@ -13,15 +18,10 @@ module.exports = {
       secondary: "#4F8CE5",
       para: "#808390",
     },
-    extend: {
-       
-    },
-    plugins: [
-      require('@tailwindcss/typography'),
-    require('@tailwindcss/forms'),
-      require('preline/plugin'),
-   
-    
-    ],
+    extend: {},
   },
+  plugins: [ 
+    require("@tailwindcss/forms"),
+    require('preline/plugin'),
+  ],
 };

@@ -2,7 +2,8 @@
 
 body{  font-family: "DM Sans", sans-serif;}
  .cc-tab .cc-gra {background: linear-gradient(180deg, #F5F7FF 0%, rgba(240, 243, 255, 0) 100%);  
-  
+.hr {
+    color: #eee!important;
  }
 .bg-primary{background-color:#081242;}
 .text-primary{color:#081242;}
@@ -13,8 +14,3 @@ body{  font-family: "DM Sans", sans-serif;}
 .home-banner {background: url('img/static-home.jpg') ; background-size: cover;
   background-repeat: no-repeat;
   background-position: center center; } 
-
-  .cc-scrollspy li a:active{ font-weight: bold!important;}
- 
-   
-  
