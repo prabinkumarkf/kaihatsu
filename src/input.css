@@ -16,7 +16,7 @@
     @apply block text-base font-medium leading-6   active:font-bold focus:outline-none hs-scrollspy-active:font-bold border-l-4 border-[#4E8BE4] my-5 py-6 p-4    shadow-xl;
   }
   .heada {
-    @apply text-sm text-para;
+    @apply text-sm text-para uppercase;
   }
   .headb {
     @apply text-2xl font-semibold  text-main capitalize;
