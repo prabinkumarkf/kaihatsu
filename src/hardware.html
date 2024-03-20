@@ -1,613 +1,959 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="scroll-smooth">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Hardware</title>
-    <link rel="icon" type="image/x-icon" href="img/fav.png">
-    <link href="./custom.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <script src="./custom.js"> </script>
+    <link rel="icon" type="image/x-icon" href="img/fav.png" />
+    <link href="./custom.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script src="./custom.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
-    <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
-    <link href="./output.css" rel="stylesheet">
-    <script type="text/javascript" src="../node_modules/preline/dist/preline.js"></script> 
-</head>
+    <script
+      defer
+      src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"
+    ></script>
+    <link href="./output.css" rel="stylesheet" />
+    <script
+      type="text/javascript"
+      src="../node_modules/preline/dist/preline.js"
+    ></script>
+  </head>
 
-<body class=" ">
-    <nav class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200  ">
-        <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-2 sm:p-5">
-            <a href="./" class="flex items-center space-x-3 rtl:space-x-reverse">
-                <img src="img/logo.svg" class="h-10  sm:h-16" alt="  Logo">
-            </a>
-            <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
-                <a href="contact.html"
-                    class="text-white bg-[#4E8BE4] hover:bg-black focus:ring-4 focus:outline-none focus:ring- yellow-300 text-lg font-medium   px-4 py-3 text-center shadow-[0_17px_35px_0px_#CEDCF2]">Contact
-                    Us</a>
-                <button data-collapse-toggle="navbar-sticky" type="button"
-                    class="inline-flex items-center p-2 w-10 h-10 justify-center  text-base text-para rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200   "
-                    aria-controls="navbar-sticky" aria-expanded="false">
-                    <span class="sr-only">Open main menu</span>
-                    <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none"
-                        viewBox="0 0 17 14">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M1 1h15M1 7h15M1 13h15" />
-                    </svg>
-                </button>
-            </div>
-            <div class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1" id="navbar-sticky">
-                <ul
-                    class="flex flex-col p-4 md:p-0 mt-4 text-lg font-normal border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white   ">
-                    <li>
-                        <a href="solar.html" class="menuitem" aria-current="page">Solar</a>
-                    </li>
-                    <li>
-                        <a href="software.html" class="menuitem">Software</a>
-                    </li>
-                    <li>
-                        <a href="hardware.html" class="menuactive">Hardware</a>
-                    </li>
-                    <li>
-                        <a href="projects.html" class="menuitem">Projects</a>
-                    </li>
-                    <li>
-                        <a href="aboutus.html" class="menuitem">About
-                            Us</a>
-                    </li>
-                    <li>
-                        <a href="downloads.html" class="menuitem">Downloads</a>
-                    </li>
-                </ul>
-            </div>
+  <body class=" ">
+    <nav class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200">
+      <div
+        class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-2 sm:p-5"
+      >
+        <a href="./" class="flex items-center space-x-3 rtl:space-x-reverse">
+          <img src="img/logo.svg" class="h-10 sm:h-16" alt="  Logo" />
+        </a>
+        <div class="flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse">
+          <a
+            href="contact.html"
+            class="text-white bg-[#4E8BE4] hover:bg-black focus:ring-4 focus:outline-none focus:ring- yellow-300 text-lg font-medium px-4 py-3 text-center shadow-[0_17px_35px_0px_#CEDCF2]"
+            >Contact Us</a
+          >
+          <button
+            data-collapse-toggle="navbar-sticky"
+            type="button"
+            class="inline-flex items-center p-2 w-10 h-10 justify-center p rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+            aria-controls="navbar-sticky"
+            aria-expanded="false"
+          >
+            <span class="sr-only">Open main menu</span>
+            <svg
+              class="w-5 h-5"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 17 14"
+            >
+              <path
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M1 1h15M1 7h15M1 13h15"
+              />
+            </svg>
+          </button>
         </div>
+        <div
+          class="items-center justify-between hidden w-full md:flex md:w-auto md:order-1"
+          id="navbar-sticky"
+        >
+          <ul
+            class="flex flex-col p-4 md:p-0 mt-4 text-lg font-normal border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white"
+          >
+            <li>
+              <a href="solar.html" class="menuitem" aria-current="page"
+                >Solar</a
+              >
+            </li>
+            <li>
+              <a href="software.html" class="menuitem">Software</a>
+            </li>
+            <li>
+              <a href="hardware.html" class="menuactive">Hardware</a>
+            </li>
+            <li>
+              <a href="projects.html" class="menuitem">Projects</a>
+            </li>
+            <li>
+              <a href="aboutus.html" class="menuitem">About Us</a>
+            </li>
+            <li>
+              <a href="downloads.html" class="menuitem">Downloads</a>
+            </li>
+          </ul>
+        </div>
+      </div>
     </nav>
     <section class="bg-[#F6F6F6]">
-        <div class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl   ">
-            <div class="  ">
-                <div class="flex flex-col lg:flex-row">
-                    <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
-                        <h2 class="text-3xl font-normal   text-main sm:text-5xl sm:leading-none">
-                            Hardware</h2>
-                    </div>
-                    <div class="lg:w-1/2">
-                        <p class="text-para">
-                            Experienced in creating Connectivity, Protocols, Energy Metering, Alarms, and Air Condition Controller Projects.
-                        </p>
-                    </div>
-                </div>
+      <div
+        class="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl"
+      >
+        <div class="  ">
+          <div class="flex flex-col lg:flex-row">
+            <div class="mb-6 lg:mb-0 lg:w-1/2 lg:pr-5">
+              <h2
+                class="text-3xl font-normal text-main sm:text-5xl sm:leading-none"
+              >
+                Hardware
+              </h2>
             </div>
+            <div class="lg:w-1/2">
+              <p class="text-para">
+                Experienced in creating Connectivity, Protocols, Energy
+                Metering, Alarms, and Air Condition Controller Projects.
+              </p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Banner-->
     <section class="">
+      <div class="relative">
+        <img
+          src="img/hardware-banner.svg"
+          class="absolute inset-0 object-cover w-full h-full"
+          alt=""
+        />
         <div class="relative">
-            <img src="img/hardware-banner.svg" class="absolute inset-0 object-cover w-full h-full" alt="" />
-            <div class="relative  ">
-                <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl  ">
-                    <div class="flex flex-col items-center justify-between xl:flex-row">
-                        <hr class="my-48">
-                    </div>
-                </div>
+          <div class="mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl">
+            <div class="flex flex-col items-center justify-between xl:flex-row">
+              <hr class="my-48" />
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <section>
-        <div class="px-6 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl   ">
-            <div class="md:grid grid-cols-5  ">
-                <div class="md:col-span-1 col-span-1 ">
-                    <ul class="sticky top-0 cc-scrollspy" data-hs-scrollspy="#scrollspy-2"
-                        data-hs-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-2">
-                        <li data-hs-scrollspy-group>
-                            <a href="#connectivity-modem"
-                                class="menuactive1">Connectivity Modem</a>
-                        </li>
-                        <li data-hs-scrollspy-group>
-                            <a href="#industrial-conversion"
-                                class="menuitem1">Industrial Conversion
-                            </a>
-                        </li>
-                        <li data-hs-scrollspy-group>
-                            <a href="#alarms-gateway"
-                                class="menuitem1">Alarms & gateway 
-                            </a>
-                        </li>
-                        <li data-hs-scrollspy-group>
-                            <a href="#energy-metering"
-                                class="menuitem1">Eenergy metering 
-                            </a>
-                        </li>
-                        <li data-hs-scrollspy-group>
-                            <a href="#air-condition-controller"
-                                class="menuitem1">Air condition controller 
-                            </a>
-                        </li>
-                    </ul>
+      <div
+        class="px-6 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl"
+      >
+        <div class="md:grid grid-cols-5">
+          <div class="md:col-span-1 col-span-1">
+            <ul
+              class="sticky top-0 cc-scrollspy"
+              data-hs-scrollspy="#scrollspy-2"
+              data-hs-scrollspy-scrollable-parent="#scrollspy-scrollable-parent-2"
+            >
+              <li data-hs-scrollspy-group>
+                <a href="#connectivity-modem" class="menuactive1"
+                  >Connectivity Modem</a
+                >
+              </li>
+              <li data-hs-scrollspy-group>
+                <a href="#industrial-conversion" class="menuitem1"
+                  >Industrial Conversion
+                </a>
+              </li>
+              <li data-hs-scrollspy-group>
+                <a href="#alarms-gateway" class="menuitem1"
+                  >Alarms & gateway
+                </a>
+              </li>
+              <li data-hs-scrollspy-group>
+                <a href="#energy-metering" class="menuitem1"
+                  >Eenergy metering
+                </a>
+              </li>
+              <li data-hs-scrollspy-group>
+                <a href="#air-condition-controller" class="menuitem1"
+                  >Air condition controller
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-span-4 md:pl-10 pl-0">
+            <div id="scrollspy-2" class="space-y-12">
+              <div id="connectivity-modem" class="space-y-5">
+                <h3 class="heada">>> CONNECTIVITY MODEM</h3>
+                <h3 class="headb">Our Connectivity & Modem Products</h3>
+                <h4 class="headc">Radio frequency modem (RF MODEM)</h4>
+                <p class="p">
+                  The RF modems are based on Micrel™ Trans-receiver chip. They
+                  are ideal for data communication with 9,600 baud rate. They
+                  operate on 300 MHz to 900 MHz range. The range is user
+                  selectable at the time of order. The power output is 10 mW and
+                  with 6 dB external antenna, they can give a straight line
+                  communication distance of 5 km.<br />These modems have RS 232C
+                  interface for easy connection to any PC. They are packed in
+                  less than visiting card size form factor and uses 9V DC power.
+                </p>
+                <a href="#" class="text-sec">Download RF Modem PDF</a>
+                <h4 class="headb">Power line carrier modem (PLC)</h4>
+                <p class="p">
+                  The Power Line Carrier gives the easiest way for connecting
+                  two points. It uses existing power line to send the data. The
+                  PLC communication takes place using 52 KHz or 63 KHz
+                  FSK/Spread Spectrum principal. This is utilised over mains
+                  carrier. The modems are built using ST™ chip set.<br />These
+                  modems have RS 232C interface for easy connection to any PC.
+                  They are packed in less than visiting card size form factor
+                  and uses 12V DC power.
+                </p>
+                <a href="#" class="text-sec">Download PLC Modem PDF</a>
+              </div>
+              <hr class="hrline" />
+              <div id="industrial-conversion" class="space-y-5 text-para">
+                <h3 class="heada">>> industrial CONVERSION</h3>
+                <h3 class="headb">Our Protocols Products</h3>
+                <h4 class="headc">
+                  Protocol converter (RS 232 OR RS 485 MODE)
+                </h4>
+                <p>
+                  Various instrument and analysers have their proprietary
+                  protocols for communication. Many a times it becomes
+                  impossible to network them. A protocol converter can convert
+                  from any protocol to standard protocol. Most commonly used are
+                  from proprietary protocol to MODBUS™ RTU protocol. The
+                  protocol converter is a customized device and can be
+                  configured for any proprietary protocol, provided the details
+                  are available. These are powerful embedded systems.
+                </p>
+                <p>
+                  These devices has two serial ports in RS 232 or RS 485
+                  communication mode. They work at 9,600 baud rate. They are in
+                  DIN mountable device. They work on any voltage between 9V DC
+                  to 24 V DC. (Other voltages are available on request)
+                </p>
+                <a href="#" class="text-sec">Download Protocol Converter PDF</a>
+                <h4 class="headb">Timer converter (DI,DO & T2 TO RS232)</h4>
+                <p>
+                  This is a small converter which converts two digital inputs,
+                  two digital outputs and two timer inputs to serial interface.
+                  The digital inputs and timer inputs can be read using the
+                  serial port. There are two isolated digital inputs and two
+                  isolated timer inputs. One timer input is averaging timer
+                  input while other is totalising input. The averaging timer
+                  input can be configured using serial port for various
+                  averaging options. The totalising timer can be reset using the
+                  serial commands. The Digital Input status can be read on
+                  serial port as well as digital output status can be configured
+                  using serial commands.
+                </p>
+                <p>
+                  These devices have one serial ports in RS 232 mode. They work
+                  at 9,600 baud rate. They are in DIN mountable device. They
+                  work on any voltage between 9V DC to 24 V DC. (Other voltages
+                  are available on request). The typical input needed is TTL
+                  level and the timer input can accept the frequency up-to 4
+                  Khz. Being a Schmitt input, it can accept any waveform.
+                </p>
+                <a href="#" class="text-sec">Download Timer Converter PDF</a>
+
+                <h4 class="headb">
+                  Print format converter (CENTRONICS™ OR RS 232)
+                </h4>
+                <p>
+                  Various instrument and analysers have their own printing
+                  report formats. They print the reports using a printer
+                  attached to the instrument or analyser. Many a times the
+                  format of these reports is not matching to the one specified
+                  by the user or government agencies.
+                </p>
+                <p>
+                  These print format converters convert the fixed print format
+                  to any other format user is in need of. These are powerful
+                  embedded systems and they are user configurable.
+                </p>
+                <p>
+                  They are in DIN mountable device. They work on any voltage
+                  between 9V DC to 24 V DC. (Other voltages are available on
+                  request)
+                </p>
+                <a href="#" class="text-sec"
+                  >Download Print Format Converter PDF</a
+                >
+              </div>
+              <hr class="hrline" />
+              <div id="alarms-gateway" class="space-y-5">
+                <h3 class="heada">>> ALARMS & GATEWAY</h3>
+                <h3 class="headb">Our Alarm Products</h3>
+                <h4 class="headc">SMS gateway (GSM OR CDMA Mobile)</h4>
+                <p>
+                  Various alarms are generated by our software. These alarms are
+                  in audio or visual format. But they are restricted only on one
+                  particular PC SMS gateway is a product which converts this
+                  alarm into Short Messaging Service (SMS) text and can be sent
+                  on various mobile numbers. The device has a memory which can
+                  store the numbers and also get the log of SMS alarms sent with
+                  date time stamp.<br />
+                  This device has two serial ports in RS 232 or RS 485 mode.
+                  They work at 9,600 baud rate. They are in DIN mountable
+                  device. They work on any voltage between 9V DC to 12 V DC.
+                  (Other voltages are available on request). They work on both
+                  kind of mobile phone network GSM or CDMA .
+                </p>
+                <a href="#" class="text-sec">Download SMS Gateway PDF</a>
+                <h4 class="headc">
+                  ALARM system BASED ON GAS LEAKAGE DETECTION
+                </h4>
+                <p>
+                  This product is for automobile and home use application. It
+                  detects the gas leakage for CNG (Compress Natural Gas) or LPG
+                  (Liquid Petroleum Gas). The system is EURO - III compliant.
+                  Having two sensors for gas detection, full temperature
+                  compensation for the range -100C to + 850C. The gas level
+                  alarms can be displayed from 1% hazardous level to 5% of
+                  hazardous level. The home use appliance works with 90V to 320V
+                  home power supply while automobile version works with +12V DC
+                  car battery system
+                </p>
+                <a href="#" class="text-sec"
+                  >Download Gas Leakage Detector PDF</a
+                >
+                <a href="#" class="text-sec"
+                  >Download The Marketing Presentation</a
+                >
+              </div>
+              <hr class="hrline" />
+              <div id="energy-metering" class="space-y-5 text-para">
+                <h3 class="heada">>> ALARMS & GATEWAY</h3>
+                <h3 class="headb">Our Energy Metering Projects</h3>
+                <img src="img/enery-metering.svg" class="rounded-md" />
+                <h4 class="headc">
+                  Single phase multi-parameter energy meter (Class 1)
+                </h4>
+                <p>
+                  The design is based on Cirrus Logic™; metering chip &
+                  Microchip™ PIC 16F72 Microcontroller. This is a high end
+                  meter. It complies to all the standard parameters any
+                  electricity utility company asks for. Other features include,
+                  all the tamper detection methods, all electrical measurement
+                  parameters, load survey tables, Real Time Clock (RTC), Time of
+                  the Day (TOD) metering, Switch Mode Power Supply (SMPS) and
+                  Liquid Crystal Display (LCD) and two communication ports.
+                  These ports can be connected to a piggy back boards for Power
+                  Line Carrier Communication (PLCC) or Radio Frequency
+                  communication (RF) or Telephone communication (PSTN) or
+                  MODBUS™ communication or Optical Communication or GSM
+                  communication or Local Area Network (LAN). These piggy back
+                  circuits are based on Plug & Play technique. Therefore it is
+                  possible to alter them even in the field. This makes a very
+                  versatile meter. The circuit has been designed to match the
+                  standard electronic meter cabinet as specified by Indian
+                  Electricity Utility Companies. These circuits are made using
+                  all Surface Mount Components (SMD) and has a built in
+                  protection for all surges and various electrical conditions in
+                  India. The design complies all the standard tests
+                  certification prevailing in India.
+                </p>
+                <p>
+                  Products based on this design are presently sold in India.
+                </p>
+
+                <h4 class="headc">Tri-vector energy meter (Class 0.5)</h4>
+                <p>
+                  The design is based on AD™ metering chip & Microchip™ PIC
+                  18F6270 Microcontroller. This is a high end meter. It complies
+                  to all the standard parameters any electricity utility company
+                  asks for. Other features include, all the tamper detection
+                  methods, all electrical measurement parameters, load survey
+                  tables , Real Time Clock (RTC), Time of the Day (TOD)
+                  metering, Switch Mode Power Supply (SMPS) and Liquid Crystal
+                  Display (LCD) and one Optical communication ports. The data
+                  can be downloaded to any standard Common Meter Reading
+                  Instrument (CMRI). The meter can be programmed and calibrated
+                  on production floor using a standard PC software. This makes a
+                  very versatile meter. The circuit has been designed to match
+                  the standard electronic meter cabinet as specified by Indian
+                  Electricity Utility Companies. These circuits are made using
+                  all Surface Mount Components (SMD) and has a built in
+                  protection for all surges and various electrical conditions in
+                  India. The design complies all the standard tests
+                  certification prevailing in India.
+                </p>
+                <p>
+                  Products based on this design are presently sold in India.
+                </p>
+                <h4 class="headc">
+                  Retrofit unit for leacy meter communication
+                </h4>
+                <p>
+                  The design is based on Microchip™ PIC 12F508 Microcontroller.
+                  There are any legacy meters which are used in electrical
+                  system. The common types are Electromechanical Meter or Moving
+                  Disk Meters. There are also vast number of Static Energy
+                  Meters. These meters do not have any communication capability
+                  for Automatic Meter Reading System. When the electrical system
+                  needs to be automated, then these meters also need to be added
+                  in the network.
+                </p>
+                <p>
+                  The retrofit unit is designed to do just that. It collects the
+                  input pulses from the optical sensor by measuring the
+                  revolution of the rotating disk, or it measures the optical
+                  LED pulses from the electronic meter. The retrofit unit then
+                  converts the pulses into the energy units and then transmits
+                  them on serial port. The meter constant that is used for this
+                  conversion is user programmable. It can be programmed using a
+                  serial port. This port can be connected to a piggy back boards
+                  for Power Line Carrier Communication (PLCC) or Radio Frequency
+                  communication (RF) or Telephone communication (PSTN) or
+                  MODBUS™ communication or Optical Communication or GSM
+                  communication or Local Area Network (LAN). These piggy back
+                  circuits are based on Plug & Play technique. Therefore it is
+                  possible to alter them even in the field. The design complies
+                  all the standard tests certification prevailing in India.
+                </p>
+                <p>Products based on this design are presently sold in India</p>
+                <h4 class="headc">
+                  Data concemtrator for automatic meter network
+                </h4>
+                <p>
+                  The design is based on Embedded Microcomputer 386 design. The
+                  various meters in the network are to be read at a periodic
+                  interval with proper polling. The network can consist of a
+                  meters or retrofit unit for Legacy meters.
+                </p>
+                <p>
+                  The data concentrator unit is designed to do just that. It
+                  collects the collected the data from various meters or the
+                  retrofit units on one serial port. It then transmits it on
+                  second serial port connected to central office of the utility
+                  company. Both These ports can be connected to a piggy back
+                  boards for Power Line Carrier Communication (PLCC) or Radio
+                  Frequency communication (RF) or Telephone communication (PSTN)
+                  or MODBUS™ communication or Optical Communication or GSM
+                  communication or Local Area Network (LAN). These piggy back
+                  circuits are based on Plug & Play technique. Therefore it is
+                  possible to alter them even in the field. The design complies
+                  all the standard tests certification prevailing in India.
+                </p>
+                <p>Products based on this design are presently sold in India</p>
+                <div class="bg-[#ECF2FC] p-8 mx-9 text-para">
+                  These projects are listed here to show our development
+                  capabilities. The intellectual property right as well as
+                  manufacturing rights may or may not be with us. However if
+                  some one is interested in purchasing these products we can
+                  forward the inquiry to the concern company. Kindly send us you
+                  requirement at
+                  <a href="mailto:sales@ktcpl.com" class="text-sec">
+                    sales@ktcpl.com</a
+                  >
                 </div>
-                <div class="col-span-4 md:pl-10 pl-0">
-                    <div id="scrollspy-2" class="space-y-12">
-                        <div id="connectivity-modem" class="space-y-5 "  >
-                            <h3 class="heada">>> CONNECTIVITY MODEM</h3>
-                            <h3 class="headb">Our Connectivity & Modem Products</h3>
-                            <h4 class="headc">Radio frequency modem (RF MODEM)</h4>
-                            <p class="p">The RF modems are based on Micrel™ Trans-receiver chip. They are ideal for data communication with 9,600 baud rate. They operate on 300 MHz to 900 MHz range. The range is user selectable at the time of order. The power output is 10 mW and with 6 dB external antenna, they can give a straight line communication distance of 5 km.<br>These modems have RS 232C interface for easy connection to any PC. They are packed in less than visiting card size form factor and uses 9V DC power.</p>
-                            <a href="#" class="text-sec">Download RF Modem PDF</a>
-                                                        <h4 class="headb">Power line carrier modem (PLC)</h4>
-                            <p class="text-base text-para ">The Power Line Carrier gives the easiest way for connecting two points. It uses existing power line to send the data. The PLC communication takes place using 52 KHz or 63 KHz FSK/Spread Spectrum principal. This is utilised over mains carrier. The modems are built using ST™ chip set.</br>These modems have RS 232C interface for easy connection to any PC. They are packed in less than visiting card size form factor and uses 12V DC power.</p>
-                            <a href="#" class="text-sec">Download PLC Modem PDF</a>
-                                                    </div>
-                        <hr class="hrline">
-                        <div id="industrial-conversion" class=" space-y-5 text-para "  >
-                            <h3 class="heada  ">>> industrial CONVERSION</h3>
-                            <h3 class="headb">Our Protocols Products</h3>
-                            <h4 class="headc">Protocol converter (RS 232 OR RS 485 MODE)</h4>
-                             <p>Various instrument and analysers have their proprietary protocols for communication. Many a times it becomes impossible to network them. A protocol converter can convert from any protocol to standard protocol. Most commonly used are from proprietary protocol to MODBUS™ RTU protocol. The protocol converter is a customized device and can be configured for any proprietary protocol, provided the details are available. These are powerful embedded systems.</p>
-                             <p>These devices has two serial ports in RS 232 or RS 485 communication mode. They work at 9,600 baud rate. They are in DIN mountable device. They work on any voltage between 9V DC to 24 V DC. (Other voltages are available on request)</p>
-                             <a href="#" class="text-sec">Download Protocol Converter PDF</a>
-                            <h4 class="headb">Timer converter (DI,DO & T2 TO RS232)</h4>
-                            <p>This is a small converter which converts two digital inputs, two digital outputs and two timer inputs to serial interface. The digital inputs and timer inputs can be read using the serial port. There are two isolated digital inputs and two isolated timer inputs. One timer input is averaging timer input while other is totalising input. The averaging timer input can be configured using serial port for various averaging options. The totalising timer can be reset using the serial commands. The Digital Input status can be read on serial port as well as digital output status can be configured using serial commands.</p>
-                            <p>These devices have one serial ports in RS 232 mode. They work at 9,600 baud rate. They are in DIN mountable device. They work on any voltage between 9V DC to 24 V DC. (Other voltages are available on request). The typical input needed is TTL level and the timer input can accept the frequency up-to 4 Khz. Being a Schmitt input, it can accept any waveform.</p>
-                            <a href="#" class="text-sec">Download Timer Converter PDF</a>
-                             
-                            <h4 class="headb">Print format converter (CENTRONICS™ OR RS 232)</h4>
-                             <p>Various instrument and analysers have their own printing report formats. They print the reports using a printer attached to the instrument or analyser. Many a times the format of these reports is not matching to the one specified by the user or government agencies.</p>
-                             <p>These print format converters convert the fixed print format to any other format user is in need of. These are powerful embedded systems and they are user configurable.</p>
-                             <p>They are in DIN mountable device. They work on any voltage between 9V DC to 24 V DC. (Other voltages are available on request)</p>
-                             <a href="#" class="text-sec">Download Print Format Converter PDF</a>
-                        </div>
-                        <hr class="hrline">
-                        <div id="alarms-gateway" class=" space-y-5  ">
-                            <h3 class="heada  ">>> ALARMS & GATEWAY</h3>
-                            <h3 class="headb">Our Alarm Products</h3>
-                            <h4 class="headc">SMS gateway (GSM OR CDMA Mobile)</h4>
-                             <p>Various alarms are generated by our software. These alarms are in audio or visual format. But they are restricted only on one particular PC SMS gateway is a product which converts this alarm into Short Messaging Service (SMS) text and can be sent on various mobile numbers. The device has a memory which can store the numbers and also get the log of SMS alarms sent with date time stamp.<br>
-                                This device has two serial ports in RS 232 or RS 485 mode. They work at 9,600 baud rate. They are in DIN mountable device. They work on any voltage between 9V DC to 12 V DC. (Other voltages are available on request). They work on both kind of mobile phone network GSM or CDMA .</p>
-                                <a href="#" class="text-sec">Download SMS Gateway PDF</a>
-                            <h4 class="headc">ALARM system BASED ON GAS LEAKAGE DETECTION                            </h4>
-                             <p>This product is for automobile and home use application. It detects the gas leakage for CNG (Compress Natural Gas) or LPG (Liquid Petroleum Gas). The system is EURO - III compliant. Having two sensors for gas detection, full temperature compensation for the range -100C to + 850C. The gas level alarms can be displayed from 1% hazardous level to 5% of hazardous level. The home use appliance works with 90V to 320V home power supply while automobile version works with +12V DC car battery system</p>
-                             <a href="#" class="text-sec">Download Gas Leakage Detector PDF</a>
-                             <a href="#" class="text-sec">Download The Marketing Presentation</a>
-                        </div>
-                        <hr class="hrline">
-                        <div id="energy-metering" class=" space-y-5  text-para ">
-                            <h3 class="heada  ">>> ALARMS & GATEWAY</h3>
-                            <h3 class="headb">Our Energy Metering Projects</h3>
-                            <img src="img/enery-metering.svg" class="rounded-md"> 
-                            <h4 class="headc">Single phase multi-parameter energy meter (Class 1)</h4>
-                            <p>The design is based on Cirrus Logic™; metering chip & Microchip™ PIC 16F72 Microcontroller. This is a high end meter. It complies to all the standard parameters any electricity utility company asks for. Other features include, all the tamper detection methods, all electrical measurement parameters, load survey tables, Real Time Clock (RTC), Time of the Day (TOD) metering, Switch Mode Power Supply (SMPS) and Liquid Crystal Display (LCD) and two communication ports. These ports can be connected to a piggy back boards for Power Line Carrier Communication (PLCC) or Radio Frequency communication (RF) or Telephone communication (PSTN) or MODBUS™ communication or Optical Communication or GSM communication or Local Area Network (LAN). These piggy back circuits are based on Plug & Play technique. Therefore it is possible to alter them even in the field. This makes a very versatile meter. The circuit has been designed to match the standard electronic meter cabinet as specified by Indian Electricity Utility Companies. These circuits are made using all Surface Mount Components (SMD) and has a built in protection for all surges and various electrical conditions in India. The design complies all the standard tests certification prevailing in India.</p> <p>Products based on this design are presently sold in India.
-                            </p>
-                             
-                            <h4 class="headc">Tri-vector energy meter (Class 0.5)</h4>
-                            <p>The design is based on AD™ metering chip & Microchip™ PIC 18F6270 Microcontroller. This is a high end meter. It complies to all the standard parameters any electricity utility company asks for. Other features include, all the tamper detection methods, all electrical measurement parameters, load survey tables , Real Time Clock (RTC), Time of the Day (TOD) metering, Switch Mode Power Supply (SMPS) and Liquid Crystal Display (LCD) and one Optical communication ports. The data can be downloaded to any standard Common Meter Reading Instrument (CMRI). The meter can be programmed and calibrated on production floor using a standard PC software. This makes a very versatile meter. The circuit has been designed to match the standard electronic meter cabinet as specified by Indian Electricity Utility Companies. These circuits are made using all Surface Mount Components (SMD) and has a built in protection for all surges and various electrical conditions in India. The design complies all the standard tests certification prevailing in India.</p><p>Products based on this design are presently sold in India.
-                            </p>
-                            <h4 class="headc">Retrofit unit for leacy meter communication</h4>
-                            <p> The design is based on Microchip™ PIC 12F508 Microcontroller. There are any legacy meters which are used in electrical system. The common types are Electromechanical Meter or Moving Disk Meters. There are also vast number of Static Energy Meters. These meters do not have any communication capability for Automatic Meter Reading System. When the electrical system needs to be automated, then these meters also need to be added in the network.
-                            </p>
-                            <p>The retrofit unit is designed to do just that. It collects the input pulses from the optical sensor by measuring the revolution of the rotating disk, or it measures the optical LED pulses from the electronic meter. The retrofit unit then converts the pulses into the energy units and then transmits them on serial port. The meter constant that is used for this conversion is user programmable. It can be programmed using a serial port. This port can be connected to a piggy back boards for Power Line Carrier Communication (PLCC) or Radio Frequency communication (RF) or Telephone communication (PSTN) or MODBUS™ communication or Optical Communication or GSM communication or Local Area Network (LAN). These piggy back circuits are based on Plug & Play technique. Therefore it is possible to alter them even in the field. The design complies all the standard tests certification prevailing in India.
-                            </p>
-                            <p>Products based on this design are presently sold in India
-                            </p>
-                            <h4 class="headc"> Data concemtrator for automatic meter network</h4>
-                                                       <p>The design is based on Embedded Microcomputer 386 design. The various meters in the network are to be read at a periodic interval with proper polling. The network can consist of a meters or retrofit unit for Legacy meters.
-                            </p>
-                            <p>The data concentrator unit is designed to do just that. It collects the collected the data from various meters or the retrofit units on one serial port. It then transmits it on second serial port connected to central office of the utility company. Both These ports can be connected to a piggy back boards for Power Line Carrier Communication (PLCC) or Radio Frequency communication (RF) or Telephone communication (PSTN) or MODBUS™ communication or Optical Communication or GSM communication or Local Area Network (LAN). These piggy back circuits are based on Plug & Play technique. Therefore it is possible to alter them even in the field. The design complies all the standard tests certification prevailing in India.</p>
-                            <p>Products based on this design are presently sold in India</p>
-                            <div class="bg-[#ECF2FC] p-8 mx-9 text-para"> These projects are listed here to show our development capabilities. The intellectual property right as well as manufacturing rights may or may not be with us. However if some one is interested in purchasing these products we can forward the inquiry to the concern company. Kindly send us you requirement at  <a href="mailto:sales@ktcpl.com" class="text-sec">  sales@ktcpl.com</a></div>
-                             
-                             
-                        </div>
-                        <hr class="hrline">
-                        <div id="air-condition-controller" class=" space-y-5  text-para ">
-                            <h3 class="heada  ">>> ASSIGNMENT IN SOLAR</h3>
-                            <h3 class="headb">Kaihatsu completed various assignments in
-                                solar for 16 MW Grid Interactive Free Field Solar Power Plants & another 15 MW is in
-                                construction phase.</h3>
-                            <h4 class="headc">SOLAR PHOTOVOLTAIC MODULE MANUFACTURING
-                            </h4>
-                            <p>
-                                <strong> Description :</strong>
-                                Full turn-key project for setting up the manufacturing
-                                unit of Solar Photo Voltaic module. The technology provider can give the technology for
-                                two different types of modules. Amorphous Silicon and thin Film CIGS.The first one is a
-                                well established technology in market so there is a large market demand. However the
-                                cost and availability of Silicon as raw material has forced the market to move on making
-                                a solar cell other than Silicon. Thus CIGS is an emerging technology now
-                            </p>
-                            <div class="flex md:flex-row items-center justify-between flex-col">
-                                <div class="space-y-3">
-                                    <p>
-                                        <strong>Advantages :</strong>
-                                        Large Export and Domestic Market.
-                                    </p>
-                                    <p>
-                                        <strong> What Kaihatsu can do :</strong>
-                                        Technology tie up + project monitoring
-                                    </p>
-                                    <p>
-                                        <strong>Other Information :</strong>
-                                        Government of India special 20% grant of the
-                                        project cost for semiconductor industry is applicable.
-                                    </p>
-                                    <p>
-                                        <strong>Remarks :</strong>
-                                        Nil.
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="img/s2.png" class="  ">
-                                </div>
-                            </div>
-                            <h4 class="headc">GRID INTERACTIVE SOLAR PHOTO VOLTAIC POWER
-                                PLANTS</h4>
-                            <p>
-                                <strong> Description :</strong>
-                                The power plants feeding the electricity to grid. The
-                                plants (size of 1 MW and above) are promoted by Indian Government. Maximum capacity at
-                                present is restricted to 10 MW per stats. However some stats like Rajasthan,West
-                                Bengal,Haryana have made their own policy giving higher rate than central and in some
-                                cases removing the restriction on capacity
-                            </p>
-                            <p>
-                                <strong> Advantages :</strong>
-                                Present rate of Rs. 15/- unit with carbon credits makes
-                                it very attractive financial proposal. The real income will be very high after 10 years
-                                when the plant becomes debt free. The plant life is 30 years and with no need for raw
-                                material it is the best business.
-                            </p>
-                            <p>
-                                <strong> What Kaihatsu can do :</strong>
-                                Full turn key project
-                            </p>
-                            <p>
-                                <strong> Other Information :</strong>
-                                Nil
-                            </p>
-                            <p>
-                                <strong> Remarks :</strong>
-                                At present Kaihatsu is setting up a power plant of 5 MW in
-                                village Sivlakha, Bhuj, Gujarat for our customer M/s Euro Solar Power Pvt. Ltd.
-                            </p>
-                            <h4 class="headc">CONCENTRATED SOLAR THERMAL POWER PLANT
-                            </h4>
-                            <p>
-                                <strong> Description :</strong>
-                                A thermic fluid is heated using mirrors and solar
-                                energy. This fluid makes a steam. This steam can be use to generate the power using
-                                normal steam generator.
-                            </p>
-                            <div class="flex md:flex-row items-center justify-between flex-col">
-                                <div class="space-y-3">
-                                    <p>
-                                        <strong>Advantages :</strong>
-                                        Unlike PV, solar thermal can work in night well as
-                                        with alternate fuel. Unlike PV, the efficiency increases with the heat.Hence
-                                        ideally suited for India.
-                                    </p>
-                                    <p>
-                                        <strong> What Kaihatsu can do :</strong>
-                                        Technology tie up + project monitoring
-                                    </p>
-                                    <p>
-                                        <strong>Other Information :</strong>
-                                        Rajasthan Government has announced a policy
-                                        for Rs. 13.78/- per unit on Solar Thermal.
-                                    </p>
-                                    <p>
-                                        <strong>Remarks :</strong>
-                                        Nil.
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="img/s3.png" class="  ">
-                                </div>
-                            </div>
-                            <h4 class="headc">OFF GRID POWER PLANT FOR SMALL HOUSES,
-                                SCHOOLS, HOSPITAL, IT INDUSTRIES
-                            </h4>
-                            <p>
-                                <strong> Description :</strong>
-                                Wind generators and solar PV is used to charge the
-                                batteries,they produce electricity which is uninterrupted.
-                            </p>
-                            <div class="flex md:flex-row items-center justify-between flex-col">
-                                <div class="space-y-3">
-                                    <p>
-                                        <strong>Advantages :</strong>
-                                        It gives uninterrupted power for 24 hrs. Good for
-                                        hospitals, IT companies, high end houses. Specially good for India as load
-                                        shedding is a problem.
-                                    </p>
-                                    <p>
-                                        <strong> What Kaihatsu can do :</strong>
-                                        System development + system integration
-                                    </p>
-                                    <p>
-                                        <strong>Other Information :</strong>
-                                        Nil.
-                                    </p>
-                                    <p> <strong>Remarks :</strong> Nil.</p>
-                                </div>
-                                <div>
-                                    <img src="img/s4.png" class="  ">
-                                </div>
-                            </div>
-                            <h4 class="headc">OFF GRID SYSTEM FOR FARMERS</h4>
-                            <p>
-                                <strong> Description :</strong>
-                                This is a small heat cycle engine which uses Solar
-                                thermal or any other fuel. This only works for 1 MW or lower. It can use any available
-                                agriculture waste material as a fuel.
-                            </p>
-                            <p>
-                                <strong> Advantages :</strong>
-                                Small systems for farmers, Better control on system.
-                            </p>
-                            <p>
-                                <strong> What Kaihatsu can do :</strong>
-                                Technology tie up + project monitoring
-                            </p>
-                            <p>
-                                <strong> Other Information :</strong>
-                                Nil
-                            </p>
-                            <p>
-                                <strong> Remarks :</strong>
-                                Nil
-                            </p>
-                            <h4 class="headc">OFF GRID SYSTEM FOR FARMERS
-                            </h4>
-                            <p>
-                                <strong> Description :</strong>
-                                This is a based on concentrating dish and sterling
-                                engine. The sterling engine is a small heat engine can generate power for small house(s)
-                                10KW or 25 KW. Effective for agriculture as no need of long cables. Independently
-                                monitored system.
-                            </p>
-                            <div class="flex md:flex-row items-center justify-between flex-col">
-                                <div class="space-y-3">
-                                    <p>
-                                        <strong>Advantages :</strong>
-                                        Rather than giving the free electricity to farmers,
-                                        they can be given dish through financial agencies like NABARD. This will remove
-                                        the burden on utility companies. NABARD can earn interest and carbon credits.
-                                    </p>
-                                    <p>
-                                        <strong> What Kaihatsu can do :</strong>
-                                        Technology tie up + Coordination for
-                                        engine development.
-                                    </p>
-                                    <p>
-                                        <strong>Other Information :</strong>
-                                        The system is only up to 25KW
-                                    </p>
-                                    <p>
-                                        <strong>Remarks :</strong>
-                                        Nil.
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="img/s5.png" class="  ">
-                                </div>
-                            </div>
-                            <h4 class="headc">SMALL PRODUCTS, AUTOMATION ITEMS AND
-                                MONITORING SOFTWARE</h4>
-                            <p>
-                                <strong> Description :</strong>
-                                Lot of small items like solar latern, mobile chargers,
-                                toys battery chargers, street lights, garden lights can be developed using solar, wind
-                                or both.
-                            </p>
-                            <p>
-                                <strong> Advantages :</strong>
-                                Ancillary development + increase of product range.
-                            </p>
-                            <p>
-                                <strong> What Kaihatsu can do :</strong>
-                                Full development.
-                            </p>
-                            <p>
-                                <strong> Other Information :</strong>
-                                Nil
-                            </p>
-                            <p>
-                                <strong> Remarks :</strong>
-                                Nil
-                            </p>
-                            <h4 class="headc">INDUSTRIAL HEAT, WATER HEATERS, STEAM
-                                GENERATORS FOR COOKING
-                            </h4>
-                            <p>
-                                <strong> Description :</strong>
-                                Other application.
-                            </p>
-                            <div class="flex md:flex-row items-center justify-between flex-col">
-                                <div class="space-y-3">
-                                    <p>
-                                        <strong>Advantages :</strong>
-                                        Ancillary development + increase of product range.
-                                    </p>
-                                    <p>
-                                        <strong> What Kaihatsu can do :</strong>
-                                        Not much role.
-                                    </p>
-                                    <p>
-                                        <strong>Other Information :</strong>
-                                        The system is only up to 25KW
-                                    </p>
-                                    <p>
-                                        <strong>Remarks :</strong>
-                                        Nil.
-                                    </p>
-                                </div>
-                                <div>
-                                    <img src="img/s6.png" class="  ">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+              </div>
+              <hr class="hrline" />
+              <div id="air-condition-controller" class="space-y-5 text-para">
+                <h3 class="heada">>> ASSIGNMENT IN SOLAR</h3>
+                <h3 class="headb">
+                  Kaihatsu completed various assignments in solar for 16 MW Grid
+                  Interactive Free Field Solar Power Plants & another 15 MW is
+                  in construction phase.
+                </h3>
+                <h4 class="headc">SOLAR PHOTOVOLTAIC MODULE MANUFACTURING</h4>
+                <p>
+                  <strong> Description :</strong>
+                  Full turn-key project for setting up the manufacturing unit of
+                  Solar Photo Voltaic module. The technology provider can give
+                  the technology for two different types of modules. Amorphous
+                  Silicon and thin Film CIGS.The first one is a well established
+                  technology in market so there is a large market demand.
+                  However the cost and availability of Silicon as raw material
+                  has forced the market to move on making a solar cell other
+                  than Silicon. Thus CIGS is an emerging technology now
+                </p>
+                <div
+                  class="flex md:flex-row items-center justify-between flex-col"
+                >
+                  <div class="space-y-3">
+                    <p>
+                      <strong>Advantages :</strong>
+                      Large Export and Domestic Market.
+                    </p>
+                    <p>
+                      <strong> What Kaihatsu can do :</strong>
+                      Technology tie up + project monitoring
+                    </p>
+                    <p>
+                      <strong>Other Information :</strong>
+                      Government of India special 20% grant of the project cost
+                      for semiconductor industry is applicable.
+                    </p>
+                    <p>
+                      <strong>Remarks :</strong>
+                      Nil.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="img/s2.png" class="  " />
+                  </div>
                 </div>
+                <h4 class="headc">
+                  GRID INTERACTIVE SOLAR PHOTO VOLTAIC POWER PLANTS
+                </h4>
+                <p>
+                  <strong> Description :</strong>
+                  The power plants feeding the electricity to grid. The plants
+                  (size of 1 MW and above) are promoted by Indian Government.
+                  Maximum capacity at present is restricted to 10 MW per stats.
+                  However some stats like Rajasthan,West Bengal,Haryana have
+                  made their own policy giving higher rate than central and in
+                  some cases removing the restriction on capacity
+                </p>
+                <p>
+                  <strong> Advantages :</strong>
+                  Present rate of Rs. 15/- unit with carbon credits makes it
+                  very attractive financial proposal. The real income will be
+                  very high after 10 years when the plant becomes debt free. The
+                  plant life is 30 years and with no need for raw material it is
+                  the best business.
+                </p>
+                <p>
+                  <strong> What Kaihatsu can do :</strong>
+                  Full turn key project
+                </p>
+                <p>
+                  <strong> Other Information :</strong>
+                  Nil
+                </p>
+                <p>
+                  <strong> Remarks :</strong>
+                  At present Kaihatsu is setting up a power plant of 5 MW in
+                  village Sivlakha, Bhuj, Gujarat for our customer M/s Euro
+                  Solar Power Pvt. Ltd.
+                </p>
+                <h4 class="headc">CONCENTRATED SOLAR THERMAL POWER PLANT</h4>
+                <p>
+                  <strong> Description :</strong>
+                  A thermic fluid is heated using mirrors and solar energy. This
+                  fluid makes a steam. This steam can be use to generate the
+                  power using normal steam generator.
+                </p>
+                <div
+                  class="flex md:flex-row items-center justify-between flex-col"
+                >
+                  <div class="space-y-3">
+                    <p>
+                      <strong>Advantages :</strong>
+                      Unlike PV, solar thermal can work in night well as with
+                      alternate fuel. Unlike PV, the efficiency increases with
+                      the heat.Hence ideally suited for India.
+                    </p>
+                    <p>
+                      <strong> What Kaihatsu can do :</strong>
+                      Technology tie up + project monitoring
+                    </p>
+                    <p>
+                      <strong>Other Information :</strong>
+                      Rajasthan Government has announced a policy for Rs.
+                      13.78/- per unit on Solar Thermal.
+                    </p>
+                    <p>
+                      <strong>Remarks :</strong>
+                      Nil.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="img/s3.png" class="  " />
+                  </div>
+                </div>
+                <h4 class="headc">
+                  OFF GRID POWER PLANT FOR SMALL HOUSES, SCHOOLS, HOSPITAL, IT
+                  INDUSTRIES
+                </h4>
+                <p>
+                  <strong> Description :</strong>
+                  Wind generators and solar PV is used to charge the
+                  batteries,they produce electricity which is uninterrupted.
+                </p>
+                <div
+                  class="flex md:flex-row items-center justify-between flex-col"
+                >
+                  <div class="space-y-3">
+                    <p>
+                      <strong>Advantages :</strong>
+                      It gives uninterrupted power for 24 hrs. Good for
+                      hospitals, IT companies, high end houses. Specially good
+                      for India as load shedding is a problem.
+                    </p>
+                    <p>
+                      <strong> What Kaihatsu can do :</strong>
+                      System development + system integration
+                    </p>
+                    <p>
+                      <strong>Other Information :</strong>
+                      Nil.
+                    </p>
+                    <p><strong>Remarks :</strong> Nil.</p>
+                  </div>
+                  <div>
+                    <img src="img/s4.png" class="  " />
+                  </div>
+                </div>
+                <h4 class="headc">OFF GRID SYSTEM FOR FARMERS</h4>
+                <p>
+                  <strong> Description :</strong>
+                  This is a small heat cycle engine which uses Solar thermal or
+                  any other fuel. This only works for 1 MW or lower. It can use
+                  any available agriculture waste material as a fuel.
+                </p>
+                <p>
+                  <strong> Advantages :</strong>
+                  Small systems for farmers, Better control on system.
+                </p>
+                <p>
+                  <strong> What Kaihatsu can do :</strong>
+                  Technology tie up + project monitoring
+                </p>
+                <p>
+                  <strong> Other Information :</strong>
+                  Nil
+                </p>
+                <p>
+                  <strong> Remarks :</strong>
+                  Nil
+                </p>
+                <h4 class="headc">OFF GRID SYSTEM FOR FARMERS</h4>
+                <p>
+                  <strong> Description :</strong>
+                  This is a based on concentrating dish and sterling engine. The
+                  sterling engine is a small heat engine can generate power for
+                  small house(s) 10KW or 25 KW. Effective for agriculture as no
+                  need of long cables. Independently monitored system.
+                </p>
+                <div
+                  class="flex md:flex-row items-center justify-between flex-col"
+                >
+                  <div class="space-y-3">
+                    <p>
+                      <strong>Advantages :</strong>
+                      Rather than giving the free electricity to farmers, they
+                      can be given dish through financial agencies like NABARD.
+                      This will remove the burden on utility companies. NABARD
+                      can earn interest and carbon credits.
+                    </p>
+                    <p>
+                      <strong> What Kaihatsu can do :</strong>
+                      Technology tie up + Coordination for engine development.
+                    </p>
+                    <p>
+                      <strong>Other Information :</strong>
+                      The system is only up to 25KW
+                    </p>
+                    <p>
+                      <strong>Remarks :</strong>
+                      Nil.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="img/s5.png" class="  " />
+                  </div>
+                </div>
+                <h4 class="headc">
+                  SMALL PRODUCTS, AUTOMATION ITEMS AND MONITORING SOFTWARE
+                </h4>
+                <p>
+                  <strong> Description :</strong>
+                  Lot of small items like solar latern, mobile chargers, toys
+                  battery chargers, street lights, garden lights can be
+                  developed using solar, wind or both.
+                </p>
+                <p>
+                  <strong> Advantages :</strong>
+                  Ancillary development + increase of product range.
+                </p>
+                <p>
+                  <strong> What Kaihatsu can do :</strong>
+                  Full development.
+                </p>
+                <p>
+                  <strong> Other Information :</strong>
+                  Nil
+                </p>
+                <p>
+                  <strong> Remarks :</strong>
+                  Nil
+                </p>
+                <h4 class="headc">
+                  INDUSTRIAL HEAT, WATER HEATERS, STEAM GENERATORS FOR COOKING
+                </h4>
+                <p>
+                  <strong> Description :</strong>
+                  Other application.
+                </p>
+                <div
+                  class="flex md:flex-row items-center justify-between flex-col"
+                >
+                  <div class="space-y-3">
+                    <p>
+                      <strong>Advantages :</strong>
+                      Ancillary development + increase of product range.
+                    </p>
+                    <p>
+                      <strong> What Kaihatsu can do :</strong>
+                      Not much role.
+                    </p>
+                    <p>
+                      <strong>Other Information :</strong>
+                      The system is only up to 25KW
+                    </p>
+                    <p>
+                      <strong>Remarks :</strong>
+                      Nil.
+                    </p>
+                  </div>
+                  <div>
+                    <img src="img/s6.png" class="  " />
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
     <!-- Newsletter-->
-    <section class="py-24  bg-[url('img/newsetter-bg.svg')] bg-cover bg-no-repeat">
-        <div class="max-w-screen-2xl mx-auto">
-            <h2 class="text-white  text-3xl font-normal tracking-wider sm:text-5xl text-center">
-                Join Our Newsletter
-            </h2>
-            <p class="mb-4 text-lg   text-center text-white  ">
-                And always stay informed of the latest company news and events!
-            </p>
+    <section
+      class="py-24 bg-[url('img/newsetter-bg.svg')] bg-cover bg-no-repeat"
+    >
+      <div class="max-w-screen-2xl mx-auto">
+        <h2
+          class="text-white text-3xl font-normal tracking-wider sm:text-5xl text-center"
+        >
+          Join Our Newsletter
+        </h2>
+        <p class="mb-4 text-lg text-center text-white">
+          And always stay informed of the latest company news and events!
+        </p>
+      </div>
+      <div
+        class="flex flex-row items-center self-center justify-center flex-shrink-0 w-1/2 mx-auto lg:justify-center"
+      >
+        <div class="flex sm:flex-row flex-col justify-center w-full">
+          <input
+            type="text"
+            placeholder="Enter Email"
+            class="w-full sm:w-3/5 p-3 border border-white text-white placeholder-white bg-gray-50/5"
+          />
+          <button
+            type="button"
+            class="sm:ml-3 ml-0 sm:mt-0 mt-3 inline-flex items-center justify-center bg-white sm:w-1/2 w-full p-3 font-semibold text-sub"
+          >
+            Subscribe
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              width="14"
+              fill="#4F8CE5"
+              class="ml-3"
+            >
+              <path
+                d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"
+              />
+            </svg>
+          </button>
         </div>
-        <div
-            class="flex flex-row items-center self-center justify-center flex-shrink-0 w-1/2 mx-auto  lg:justify-center">
-            <div class="flex sm:flex-row flex-col justify-center w-full">
-                <input type="text" placeholder="Enter Email"
-                    class="w-full sm:w-3/5  p-3 border border-white text-white placeholder-white     bg-gray-50/5">
-                <button type="button"
-                    class="sm:ml-3 ml-0 sm:mt-0 mt-3 inline-flex items-center justify-center bg-white sm:w-1/2 w-full p-3 font-semibold  text-sub">Subscribe
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="14" fill="#4F8CE5"
-                        class="ml-3">
-                        <path
-                            d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z" />
-                    </svg></button>
-            </div>
-        </div>
+      </div>
     </section>
     <!-- footer-->
     <footer class="bg-[url('img/footer-bg.svg')] bg-cover bg-right">
-        <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8">
-            <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-5">
-                <div class="md:max-w-md lg:col-span-2">
-                    <a href="/" aria-label="Go home" title="Company" class="inline-flex items-center">
-                        <span class="ml-2   font-semibold   text-main   text-6xl">Get in touch With Us</span>
-                    </a>
-                    <div class="mt-4 lg:max-w-sm">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="50" height="50"
-                            fill="#4E8BE4" class="shadow-2xl rotate-45 bg-white rounded-full p-4" style="box-shadow: 0px 11px 24px 0px #00000021;
-               ">
-                            <path
-                                d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
-                        </svg>
-                    </div>
-                </div>
-                <div
-                    class="grid grid-cols-2 gap-5 row-gap-8 md:col-span-2 md:grid-cols-3 lg:col-span-3 justify-items-center">
-                    <div class=" ">
-                        <p class="font-semibold tracking-wide text-main text-xl  ">Address</p>
-                        <p class="mt-2 space-y-2 text-para text-base ">
-                            B/36, Ground Floor, Solaris - I <br> Baji Pasalkar Marg, Saki Vihar <br>Andheri (E), Mumbai
-                            -
-                            400072.
-                        </p>
-                    </div>
-                    <div class=" ">
-                        <p class="font-semibold tracking-wide text-main text-xl ">About</p>
-                        <ul class="mt-2 space-y-2">
-                            <li>
-                                <a href="solar.html"
-                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Solar</a>
-                            </li>
-                            <li>
-                                <a href="software.html"
-                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Software</a>
-                            </li>
-                            <li>
-                                <a href="hardware.html"
-                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Hardware</a>
-                            </li>
-                            <li>
-                                <a href="projects.html"
-                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Projects</a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class=" ">
-                        <p class="font-semibold tracking-wide text-main text-xl ">Additional links</p>
-                        <ul class="mt-2 space-y-2">
-                            <li>
-                                <a href="aboutus.html"
-                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">About
-                                    Us</a>
-                            </li>
-                            <li>
-                                <a href="downloads.html"
-                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Downloads</a>
-                            </li>
-                            <li>
-                                <a href="privacypolicy.html"
-                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Privacy
-                                    policy</a>
-                            </li>
-                            <li>
-                                <a href="termsandconditions.html"
-                                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">Terms
-                                    and conditions</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+      <div
+        class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8"
+      >
+        <div class="grid gap-16 row-gap-10 mb-8 lg:grid-cols-5">
+          <div class="md:max-w-md lg:col-span-2">
+            <a
+              href="/"
+              aria-label="Go home"
+              title="Company"
+              class="inline-flex items-center"
+            >
+              <span class="ml-2 font-semibold text-main text-6xl"
+                >Get in touch With Us</span
+              >
+            </a>
+            <div class="mt-4 lg:max-w-sm">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 384 512"
+                width="50"
+                height="50"
+                fill="#4E8BE4"
+                class="shadow-2xl rotate-45 bg-white rounded-full p-4"
+                style="box-shadow: 0px 11px 24px 0px #00000021"
+              >
+                <path
+                  d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z"
+                />
+              </svg>
             </div>
-            <div class="lg:grid block md:grid-cols-5 grid-cols-2 gap-4 sm:mt-20 mt-8">
-                <div class="col-start-1 col-end-3  ">
-                    <p class="mt-2 space-y-2 text-para text-base ">Achieving both efficiency and quality leaves a
-                        lasting
-                        impression...</p>
-                </div>
-                <div class="col-start-4 col-end-5 grid lg:justify-items-end justify-items-start">
-                    <p class="mt-2 space-y-2 text-para text-base "><strong> E-mail:</strong> sales@ktcpl.com</p>
-                </div>
-                <div class="grid   lg:justify-items-end justify-items-start">
-                    <p class="mt-2 space-y-2 text-para text-base ">
-                    <div class="flex flex-row text-para">
-                        <span class="font-semibold mr-3"> Call:</span>
-                        <ul>
-                            <li class="text-para text-base">+91 22 2857 6348</li>
-                            <li class="text-para text-base"> +91 22 2857 2188</li>
-                        </ul>
-                        </p>
-                    </div>
-                </div>
+          </div>
+          <div
+            class="grid grid-cols-2 gap-5 row-gap-8 md:col-span-2 md:grid-cols-3 lg:col-span-3 justify-items-center"
+          >
+            <div class=" ">
+              <p class="font-semibold tracking-wide text-main text-xl">
+                Address
+              </p>
+              <p class="mt-2 space-y-2 text-para text-base">
+                B/36, Ground Floor, Solaris - I <br />
+                Baji Pasalkar Marg, Saki Vihar <br />Andheri (E), Mumbai -
+                400072.
+              </p>
             </div>
+            <div class=" ">
+              <p class="font-semibold tracking-wide text-main text-xl">About</p>
+              <ul class="mt-2 space-y-2">
+                <li>
+                  <a
+                    href="solar.html"
+                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+                    >Solar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="software.html"
+                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+                    >Software</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="hardware.html"
+                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+                    >Hardware</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="projects.html"
+                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+                    >Projects</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class=" ">
+              <p class="font-semibold tracking-wide text-main text-xl">
+                Additional links
+              </p>
+              <ul class="mt-2 space-y-2">
+                <li>
+                  <a
+                    href="aboutus.html"
+                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="downloads.html"
+                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+                    >Downloads</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="privacypolicy.html"
+                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+                    >Privacy policy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="termsandconditions.html"
+                    class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+                    >Terms and conditions</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
-        <div class="px-4 mt-12 sm:max-w-xl md:max-w-full lg:max-w-screen-2xl lg:px-8 bg-[#F9F5FF]  mx-auto">
-            <div class="flex flex-col justify-between   py-5   sm:flex-row ">
-                <p class="text-para text-base">
-                    Kaihatsu Techno Centre Pvt Ltd @2024 All Rights Reserved.
-                </p>
-                <div class="flex items-center mt-4 space-x-4 sm:mt-0">
-                    <a href="/" class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" fill="#4E8BE4" class="h-5">
-                            <path
-                                d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z" />
-                        </svg>
-                    </a>
-                    <a href="/" class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">
-                        <svg viewBox="0 0 24 24" fill="#4E8BE4" class="h-5">
-                            <path
-                                d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="/" class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">
-                        <svg viewBox="0 0 30 30" fill="#4E8BE4" class="h-6">
-                            <circle cx="15" cy="15" r="4"></circle>
-                            <path
-                                d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z">
-                            </path>
-                        </svg>
-                    </a>
-                    <a href="/" class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400">
-                        <svg viewBox="0 0 24 24" fill="#4E8BE4" class="h-5">
-                            <path
-                                d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
+        <div
+          class="lg:grid block md:grid-cols-5 grid-cols-2 gap-4 sm:mt-20 mt-8"
+        >
+          <div class="col-start-1 col-end-3">
+            <p class="mt-2 space-y-2 text-para text-base">
+              Achieving both efficiency and quality leaves a lasting
+              impression...
+            </p>
+          </div>
+          <div
+            class="col-start-4 col-end-5 grid lg:justify-items-end justify-items-start"
+          >
+            <p class="mt-2 space-y-2 text-para text-base">
+              <strong> E-mail:</strong> sales@ktcpl.com
+            </p>
+          </div>
+          <div class="grid lg:justify-items-end justify-items-start">
+            <div class="flex flex-row text-para">
+              <span class="font-semibold mr-3"> Call:</span>
+              <ul>
+                <li class="text-para text-base">+91 22 2857 6348</li>
+                <li class="text-para text-base">+91 22 2857 2188</li>
+              </ul>
             </div>
+          </div>
         </div>
+      </div>
+      <div
+        class="px-4 mt-12 sm:max-w-xl md:max-w-full lg:max-w-screen-2xl lg:px-8 bg-[#F9F5FF] mx-auto"
+      >
+        <div class="flex flex-col justify-between py-5 sm:flex-row">
+          <p class="text-para text-base">
+            Kaihatsu Techno Centre Pvt Ltd @2024 All Rights Reserved.
+          </p>
+          <div class="flex items-center mt-4 space-x-4 sm:mt-0">
+            <a
+              href="/"
+              class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 448 512"
+                fill="#4E8BE4"
+                class="h-5"
+              >
+                <path
+                  d="M100.3 448H7.4V148.9h92.9zM53.8 108.1C24.1 108.1 0 83.5 0 53.8a53.8 53.8 0 0 1 107.6 0c0 29.7-24.1 54.3-53.8 54.3zM447.9 448h-92.7V302.4c0-34.7-.7-79.2-48.3-79.2-48.3 0-55.7 37.7-55.7 76.7V448h-92.8V148.9h89.1v40.8h1.3c12.4-23.5 42.7-48.3 87.9-48.3 94 0 111.3 61.9 111.3 142.3V448z"
+                />
+              </svg>
+            </a>
+            <a
+              href="/"
+              class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+            >
+              <svg viewBox="0 0 24 24" fill="#4E8BE4" class="h-5">
+                <path
+                  d="M24,4.6c-0.9,0.4-1.8,0.7-2.8,0.8c1-0.6,1.8-1.6,2.2-2.7c-1,0.6-2,1-3.1,1.2c-0.9-1-2.2-1.6-3.6-1.6 c-2.7,0-4.9,2.2-4.9,4.9c0,0.4,0,0.8,0.1,1.1C7.7,8.1,4.1,6.1,1.7,3.1C1.2,3.9,1,4.7,1,5.6c0,1.7,0.9,3.2,2.2,4.1 C2.4,9.7,1.6,9.5,1,9.1c0,0,0,0,0,0.1c0,2.4,1.7,4.4,3.9,4.8c-0.4,0.1-0.8,0.2-1.3,0.2c-0.3,0-0.6,0-0.9-0.1c0.6,2,2.4,3.4,4.6,3.4 c-1.7,1.3-3.8,2.1-6.1,2.1c-0.4,0-0.8,0-1.2-0.1c2.2,1.4,4.8,2.2,7.5,2.2c9.1,0,14-7.5,14-14c0-0.2,0-0.4,0-0.6 C22.5,6.4,23.3,5.5,24,4.6z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="/"
+              class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+            >
+              <svg viewBox="0 0 30 30" fill="#4E8BE4" class="h-6">
+                <circle cx="15" cy="15" r="4"></circle>
+                <path
+                  d="M19.999,3h-10C6.14,3,3,6.141,3,10.001v10C3,23.86,6.141,27,10.001,27h10C23.86,27,27,23.859,27,19.999v-10   C27,6.14,23.859,3,19.999,3z M15,21c-3.309,0-6-2.691-6-6s2.691-6,6-6s6,2.691,6,6S18.309,21,15,21z M22,9c-0.552,0-1-0.448-1-1   c0-0.552,0.448-1,1-1s1,0.448,1,1C23,8.552,22.552,9,22,9z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              href="/"
+              class="text-para transition-colors duration-300 hover:text-deep-purple-accent-400"
+            >
+              <svg viewBox="0 0 24 24" fill="#4E8BE4" class="h-5">
+                <path
+                  d="M22,0H2C0.895,0,0,0.895,0,2v20c0,1.105,0.895,2,2,2h11v-9h-3v-4h3V8.413c0-3.1,1.893-4.788,4.659-4.788 c1.325,0,2.463,0.099,2.795,0.143v3.24l-1.918,0.001c-1.504,0-1.795,0.715-1.795,1.763V11h4.44l-1,4h-3.44v9H22c1.105,0,2-0.895,2-2 V2C24,0.895,23.105,0,22,0z"
+                ></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
