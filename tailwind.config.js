@@ -5,8 +5,8 @@ const colors = require("tailwindcss/colors");
 
 module.exports = {
   content: [
-    "./src/**/*.{html,js}",
-    "./src/scripts/**/*.js",
+    "./**/*.{html,js}",
+    "./scripts/**/*.js",
     "./node_modules/preline/dist/*.js",
   ],
 
@@ -24,7 +24,9 @@ module.exports = {
       yellow: colors.yellow,
       blue: colors.blue,
     },
-    extend: {},
+    extend: {
+      display: ["group-hover"],
+    },
   },
   plugins: [require("@tailwindcss/forms"), 
   require("preline/plugin")],

@@ -34,12 +34,15 @@
     @apply space-y-5 h-0.5 border-t-0 bg-gray-200;
   }
   .tablehead {
-    @apply px-6 py-5 text-start   font-semibold text-main capitalize;
+    @apply px-3 py-5 font-semibold text-main capitalize border-r text-center;
   }
   .badge-yes {
     @apply capitalize inline-flex items-center rounded-2xl bg-[#8BE78F]/30 px-3 py-1 text-xs font-medium text-[#22CC29] ring-[#22CC29];
   }
   .badge-no {
     @apply capitalize inline-flex items-center rounded-2xl bg-[#EE9B9B]/30 px-3   text-center py-1 text-xs font-medium text-[#FF0000]   ring-[#FF0000];
+  }
+  .table-title{
+    @apply text-left py-3 font-normal text-para px-5 border-r;
   }
 }

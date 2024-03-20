@@ -15,7 +15,7 @@
     <script type="text/javascript" src="node_modules/preline/dist/preline.js"></script>
   </head>
 
-  <body class="custom-grey">
+  <body class="custom-grey ">
     <nav class="w-full z-20 top-0 start-0 border-b border-gray-200">
       <div class="max-w-screen-2xl flex flex-wrap items-center justify-between mx-auto p-2 sm:p-5">
         <a href="./" class="flex items-center space-x-3 rtl:space-x-reverse">
@@ -76,7 +76,7 @@
             <span class="sm:text-6xl text-3xl font-sans not-italic">and</span>
             Quality <br />
             <span class="sm:text-6xl text-3xl font-sans not-italic">makes lasting impression...</span>
-            <div class="w-48 pt-16 flex items-center flex-row "> <a href="#scrollto" class="text-white font-medium rounded-lg text-sm px-2 py-2 text-center   font-sans not-italic " > Scroll Down</a>
+            <div class="w-48 pt-16 flex items-center flex-row text-[#dcdcdc]"> <a href="#scrollto" class="text-[#dcdcdc] font-medium rounded-lg text-base py-2 text-center   font-sans not-italic " > Scroll Down</a>
               <svg class="w-4 h-4 ms-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 4 4 4-4"/>
                </svg>
@@ -106,7 +106,7 @@
         </div>
       </div>
     </section>
-    <section>
+    <section id="scrollto">
       <div class="px-4 pt-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl lg:px-8 lg:pt-20">
         <div class="  ">
           <div class="flex flex-col lg:flex-row">
@@ -129,12 +129,18 @@
       <div class="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-2xl md:px-24 lg:px-8 lg:py-20 text-main">
         <div class="grid gap-5 row-gap-5 mb-8 lg:grid-cols-4 sm:grid-cols-2">
           <a href="/" aria-label="View Item"
-            class="inline-block overflow-hidden duration-300 transform hover:shadow-[0_30px_40px_0px_#E6EAF1] hover:border-[#4E8BE4] border-2 border-transparent hover:border-2 rounded-lg bg-gray-100 hover:bg-[#EEF1FF]">
+            class="group inline-block overflow-hidden duration-300 transform hover:shadow-[0_30px_40px_0px_#E6EAF1] hover:border-[#4E8BE4] border-2 border-transparent hover:border-2 rounded-lg bg-gray-100 hover:bg-[#EEF1FF]">
             <div class="flex flex-col h-full p-5">
-              <img src="img/solar.svg" class="object-contain w-full h-36" alt="" />
+              <img src="img/solar.svg" class="object-contain w-full h-36 " alt="" />
               <div class="flex-grow rounded-b">
                 <div class=" ">
-                  <h6 class="my-6 font-bold text-2xl">Solar Power</h6>
+                  <h6 class="flex justify-between my-6 font-bold text-2xl">Solar Power 
+                    <div class="duration-300 group-hover:visible invisible flex items-center "> <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                      <path d="M2 1.5H17.6863L2 17.1863" stroke="#000916" stroke-width="2.88" stroke-linecap="round" stroke-linejoin="round"/>
+                      <path d="M17.6863 17.5001L17.6863 7.77463" stroke="#000916" stroke-width="2.88" stroke-linecap="round"/>
+                      </svg></div>
+                    </h6>
+                  
                   <p class="text-para text-base">
                     The benefits of solar power are becoming increasingly
                     evident. Whether it’s to save money or to help the
@@ -146,12 +152,15 @@
             </div>
           </a>
           <a href="/" aria-label="View Item"
-            class="inline-block overflow-hidden duration-300 transform hover:shadow-[0_30px_40px_0px_#E6EAF1] hover:border-[#4E8BE4] border-2 border-transparent hover:border-2 rounded-lg bg-gray-100 hover:bg-[#EEF1FF]">
+            class="group inline-block overflow-hidden duration-300 transform hover:shadow-[0_30px_40px_0px_#E6EAF1] hover:border-[#4E8BE4] border-2 border-transparent hover:border-2 rounded-lg bg-gray-100 hover:bg-[#EEF1FF]">
             <div class="flex flex-col h-full p-5">
               <img src="img/pristine.svg" class="object-contain w-full h-36" alt="" />
               <div class="flex-grow rounded-b">
                 <div class=" ">
-                  <h6 class="my-6 font-bold text-2xl">Pristine- SCADA</h6>
+                  <h6 class="flex justify-between my-6 font-bold text-2xl">Pristine- SCADA <div class="duration-300 group-hover:visible invisible flex items-center "> <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M2 1.5H17.6863L2 17.1863" stroke="#000916" stroke-width="2.88" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.6863 17.5001L17.6863 7.77463" stroke="#000916" stroke-width="2.88" stroke-linecap="round"/>
+                    </svg></div></h6>
                   <p class="text-para text-base">
                     We are engaged in designing and development of Supervisory
                     Control And Data Acquisition (SCADA) software - Pristine.
@@ -161,12 +170,15 @@
             </div>
           </a>
           <a href="/" aria-label="View Item"
-            class="inline-block overflow-hidden duration-300 transform hover:shadow-[0_30px_40px_0px_#E6EAF1] hover:border-[#4E8BE4] border-2 border-transparent hover:border-2 rounded-lg bg-gray-100 hover:bg-[#EEF1FF]">
+            class="group inline-block overflow-hidden duration-300 transform hover:shadow-[0_30px_40px_0px_#E6EAF1] hover:border-[#4E8BE4] border-2 border-transparent hover:border-2 rounded-lg bg-gray-100 hover:bg-[#EEF1FF]">
             <div class="flex flex-col h-full p-5">
               <img src="img/software.svg" class="object-contain w-full h-36" alt="" />
               <div class="flex-grow rounded-b">
                 <div class=" ">
-                  <h6 class="my-6 font-bold text-2xl">Software Products</h6>
+                  <h6 class="flex justify-between my-6 font-bold text-2xl">Software Products <div class="duration-300 group-hover:visible invisible flex items-center "> <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M2 1.5H17.6863L2 17.1863" stroke="#000916" stroke-width="2.88" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.6863 17.5001L17.6863 7.77463" stroke="#000916" stroke-width="2.88" stroke-linecap="round"/>
+                    </svg></div></h6>
                   <p class="text-para text-base">
                     The software is based on Microsoft Windows™ Operating
                     System.It supports almost all versions of Windows, Windows
@@ -178,12 +190,15 @@
             </div>
           </a>
           <a href="/" aria-label="View Item"
-            class="inline-block overflow-hidden duration-300 transform hover:shadow-[0_30px_40px_0px_#E6EAF1] hover:border-[#4E8BE4] border-2 border-transparent hover:border-2 rounded-lg bg-gray-100 hover:bg-[#EEF1FF]">
+            class="group inline-block overflow-hidden duration-300 transform hover:shadow-[0_30px_40px_0px_#E6EAF1] hover:border-[#4E8BE4] border-2 border-transparent hover:border-2 rounded-lg bg-gray-100 hover:bg-[#EEF1FF]">
             <div class="flex flex-col h-full p-5">
               <img src="img/hardware.svg" class="object-contain w-full h-36" alt="" />
               <div class="flex-grow rounded-b">
                 <div class=" ">
-                  <h6 class="my-6 font-bold text-2xl">Hardware Products</h6>
+                  <h6 class="flex justify-between my-6 font-bold text-2xl">Hardware Products <div class="duration-300 group-hover:visible invisible flex items-center "> <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg" >
+                    <path d="M2 1.5H17.6863L2 17.1863" stroke="#000916" stroke-width="2.88" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M17.6863 17.5001L17.6863 7.77463" stroke="#000916" stroke-width="2.88" stroke-linecap="round"/>
+                    </svg></div></h6>
                   <p class="text-para text-base">
                     Has developed Connectivity & Modem Products, Protocols
                     Products, Energy Metering Projects, Alarm Products and Air
@@ -197,7 +212,7 @@
       </div>
     </section>
     <section class="cc-tab bg-[#F5F7FF] text-main py-20">
-      <div class="pb-20 max-w-screen-2xl mx-auto">
+      <div class="pb-12 max-w-screen-2xl mx-auto">
         <h2 class="text-3xl font-normal text-main sm:text-5xl sm:leading-none text-center">
           What We Offer
         </h2>
@@ -206,45 +221,45 @@
         </p>
       </div>
       <div x-data="   {
-   openTab: 3,
-   activeClasses: ' text-main  font-bold !text-1xl bg-[url(img/dot.svg)] bg-no-repeat bg-center bg-left ml-6',
-   inactiveClasses: ' hover:bg-gray-50 hover:text-main duration-200',
-   }   " class="w-full flex flex-col md:flex-row max-w-screen-2xl mx-auto">
-        <div class="flex sm:flex-col flex-row flex-wrap sm:w-3/12 w-full py-3 gap-4 relative text-[#081242]">
+   openTab: 2,
+   activeClasses: ' text-main text-3xl  font-bold  bg-[url(img/dot.svg)] bg-no-repeat bg-center bg-left ml-6',
+   inactiveClasses: 'text-xl hover:bg-gray-50 hover:text-main duration-200',
+   }   " class="w-full flex flex-col md:flex-row max-w-screen-2xl mx-auto items-center">
+        <div class="flex  flex-col   flex-wrap sm:w-4/12 w-full py-3 gap-4 relative text-[#081242]">
           <a href="javascript:void(0)" @click="openTab = 1" :class="openTab === 1 ? activeClasses : inactiveClasses"
-            class="px-4 py-0 md:py-3 lg:text-lg text-base font-medium rounded-md lg:px-6">
-            POLICY SELECTION
+            class="px-4 py-0 md:py-3  font-medium rounded-md lg:px-6">
+            Policy Selection
           </a>
           <a href="javascript:void(0)" @click="openTab = 2" :class="openTab === 2 ? activeClasses : inactiveClasses"
-            class="px-4 py-0 md:py-3 lg:text-lg text-base font-medium rounded-md lg:px-6">
-            SITE SELECTION
+            class="px-4 py-0 md:py-3  font-medium rounded-md lg:px-6">
+            Site Selection
           </a>
           <a href="javascript:void(0)" @click="openTab = 3" :class="openTab === 3 ? activeClasses : inactiveClasses"
-            class="px-4 py-0 md:py-3 lg:text-lg text-base font-medium rounded-md lg:px-6">
-            TECHNOLOGY SELECTION
+            class="px-4 py-0 md:py-3  font-medium rounded-md lg:px-6">
+            Technology Selection
           </a>
           <a href="javascript:void(0)" @click="openTab = 4" :class="openTab === 4 ? activeClasses : inactiveClasses"
-            class="px-4 py-0 md:py-3 lg:text-lg text-base font-medium rounded-md lg:px-6">
-            SUPPLIER SELECTION
+            class="px-4 py-0 md:py-3  font-medium rounded-md lg:px-6">
+            Supplier Selection
           </a>
           <a href="javascript:void(0)" @click="openTab = 5" :class="openTab === 5 ? activeClasses : inactiveClasses"
-            class="px-4 py-0 md:py-3 lg:text-lg text-base font-medium rounded-md lg:px-6">
-            FINANCE TIE UPS
+            class="px-4 py-0 md:py-3  font-medium rounded-md lg:px-6">
+            Finance Tie Ups
           </a>
           <a href="javascript:void(0)" @click="openTab = 6" :class="openTab === 6 ? activeClasses : inactiveClasses"
-            class="px-4 py-0 md:py-3 lg:text-lg text-base font-medium rounded-md lg:px-6">
-            PLANT DESIGN & CONSTRUCTION
+            class="px-4 py-0 md:py-3  font-medium rounded-md lg:px-6">
+            Plant Design & Construction 
           </a>
         </div>
         <div class="flex sm:flex-col flex-row lg:w-9/12 w-full">
-          <div x-show="openTab === 1" class="md:p-6 p-0 text-base leading-relaxed text-body-color">
+          <div x-show="openTab === 1" class="p-0 text-base leading-relaxed text-body-color">
             <div class="mt-12">
-              <div class="container m-auto px-6">
+              <div class="container m-auto">
                 <div class="lg:flex justify-between items-center">
-                  <div class="lg:w-9/12 w-full bg-[#4E8BE4] md:p-12 p-6 relative justify-end">
+                  <div class="lg:w-8/12 w-full bg-[#4E8BE4] md:p-10 p-6 relative justify-end">
                     <div class="lg:w-8/12 w-full">
                       <h1 class="md:text-4xl 2xl mb-5 capitalize text-white">
-                        POLICY SELECTION
+                        Policy Selection
                       </h1>
                       <p class="text-base text-white">
                         All renewable energy projects are site dependent.
@@ -264,7 +279,7 @@
                         </svg>
                       </a>
                       <img src="img/bms.svg" alt=""
-                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-17rem]" />
+                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-18rem]" />
                     </div>
                   </div>
                   <div class="lg:w-2/12 order-2 relative"></div>
@@ -272,14 +287,14 @@
               </div>
             </div>
           </div>
-          <div x-show="openTab === 2" class="md:p-6 p-0 text-base leading-relaxed text-body-color">
+          <div x-show="openTab === 2" class="p-0 text-base leading-relaxed text-body-color">
             <div class="mt-12">
-              <div class="container m-auto px-6">
+              <div class="container m-auto">
                 <div class="lg:flex justify-between items-center">
-                  <div class="lg:w-9/12 w-full bg-[#4E8BE4] md:p-12 p-6 relative justify-end">
+                  <div class="lg:w-8/12 w-full bg-[#4E8BE4] md:p-10 p-6 relative justify-end">
                     <div class="lg:w-8/12 w-full">
                       <h1 class="md:text-4xl 2xl mb-5 capitalize text-white">
-                        SITE SELECTION
+                        Site Selection
                       </h1>
                       <p class="text-base text-white">
                         All renewable energy projects are site dependent.
@@ -299,7 +314,7 @@
                         </svg>
                       </a>
                       <img src="img/bms.svg" alt=""
-                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-17rem]" />
+                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-18rem]" />
                     </div>
                   </div>
                   <div class="lg:w-2/12 order-2 relative"></div>
@@ -307,14 +322,14 @@
               </div>
             </div>
           </div>
-          <div x-show="openTab === 3" class="md:p-6 p-0 text-base leading-relaxed text-body-color">
+          <div x-show="openTab === 3" class="p-0 text-base leading-relaxed text-body-color">
             <div class="mt-12">
-              <div class="container m-auto px-6">
+              <div class="container m-auto">
                 <div class="lg:flex justify-between items-center">
-                  <div class="lg:w-9/12 w-full bg-[#4E8BE4] md:p-12 p-6 relative justify-end">
+                  <div class="lg:w-8/12 w-full bg-[#4E8BE4] md:p-10 p-6 relative justify-end">
                     <div class="lg:w-8/12 w-full">
                       <h1 class="md:text-4xl 2xl mb-5 capitalize text-white">
-                        TECHNOLOGY SELECTION
+                        Technology Selection
                       </h1>
                       <p class="text-base text-white">
                         All renewable energy projects are site dependent.
@@ -334,7 +349,7 @@
                         </svg>
                       </a>
                       <img src="img/bms.svg" alt=""
-                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-17rem]" />
+                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-18rem]" />
                     </div>
                   </div>
                   <div class="lg:w-2/12 order-2 relative"></div>
@@ -342,14 +357,14 @@
               </div>
             </div>
           </div>
-          <div x-show="openTab === 4" class="md:p-6 p-0 text-base leading-relaxed text-body-color">
+          <div x-show="openTab === 4" class="p-0 text-base leading-relaxed text-body-color">
             <div class="mt-12">
-              <div class="container m-auto px-6">
+              <div class="container m-auto">
                 <div class="lg:flex justify-between items-center">
-                  <div class="lg:w-9/12 w-full bg-[#4E8BE4] md:p-12 p-6 relative justify-end">
+                  <div class="lg:w-8/12 w-full bg-[#4E8BE4] md:p-10 p-6 relative justify-end">
                     <div class="lg:w-8/12 w-full">
                       <h1 class="md:text-4xl 2xl mb-5 capitalize text-white">
-                        SUPPLIER SELECTION
+                        Supplier Selection
                       </h1>
                       <p class="text-base text-white">
                         All renewable energy projects are site dependent.
@@ -369,7 +384,7 @@
                         </svg>
                       </a>
                       <img src="img/bms.svg" alt=""
-                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-17rem]" />
+                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-18rem]" />
                     </div>
                   </div>
                   <div class="lg:w-2/12 order-2 relative"></div>
@@ -377,14 +392,14 @@
               </div>
             </div>
           </div>
-          <div x-show="openTab === 5" class="md:p-6 p-0text-base leading-relaxed text-body-color">
+          <div x-show="openTab === 5" class="p-0text-base leading-relaxed text-body-color">
             <div class="mt-12">
-              <div class="container m-auto px-6">
+              <div class="container m-auto">
                 <div class="lg:flex justify-between items-center">
-                  <div class="lg:w-9/12 w-full bg-[#4E8BE4] md:p-12 p-6 relative justify-end">
+                  <div class="lg:w-8/12 w-full bg-[#4E8BE4] md:p-10 p-6 relative justify-end">
                     <div class="lg:w-8/12 w-full">
                       <h1 class="md:text-4xl 2xl mb-5 capitalize text-white">
-                        FINANCE TIE UPS
+                        Finance Tie Ups
                       </h1>
                       <p class="text-base text-white">
                         All renewable energy projects are site dependent.
@@ -404,7 +419,7 @@
                         </svg>
                       </a>
                       <img src="img/bms.svg" alt=""
-                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-17rem]" />
+                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-18rem]" />
                     </div>
                   </div>
                   <div class="lg:w-2/12 order-2 relative"></div>
@@ -412,14 +427,14 @@
               </div>
             </div>
           </div>
-          <div x-show="openTab === 6" class="md:p-6 p-0 text-base leading-relaxed text-body-color">
+          <div x-show="openTab === 6" class="p-0 text-base leading-relaxed text-body-color">
             <div class="mt-12">
-              <div class="container m-auto px-6">
+              <div class="container m-auto">
                 <div class="lg:flex justify-between items-center">
-                  <div class="lg:w-9/12 w-full bg-[#4E8BE4] md:p-12 p-6 relative justify-end">
+                  <div class="lg:w-8/12 w-full bg-[#4E8BE4] md:p-10 p-6 relative justify-end">
                     <div class="lg:w-8/12 w-full">
                       <h1 class="md:text-4xl 2xl mb-5 capitalize text-white">
-                        PLANT DESIGN & CONSTRUCTION
+                        Plant Design & Construction
                       </h1>
                       <p class="text-base text-white">
                         All renewable energy projects are site dependent.
@@ -439,7 +454,7 @@
                         </svg>
                       </a>
                       <img src="img/bms.svg" alt=""
-                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-17rem]" />
+                        class="rounded sm:h-64 h-auto relative lg:absolute top-0 right-0 lg:-top-20 lg:right-[-18rem]" />
                     </div>
                   </div>
                   <div class="lg:w-2/12 order-2 relative"></div>
@@ -695,7 +710,7 @@
             </a>
             <div class="mt-4 lg:max-w-sm">
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="50" height="50" fill="#4E8BE4"
-                class="shadow-2xl rotate-45 rounded-full p-4" style="box-shadow: 0px 11px 24px 0px #00000021">
+                class="shadow-2xl rotate-45 bg-white rounded-full p-4" style="box-shadow: 0px 11px 24px 0px #00000021">
                 <path
                   d="M214.6 41.4c-12.5-12.5-32.8-12.5-45.3 0l-160 160c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 141.2V448c0 17.7 14.3 32 32 32s32-14.3 32-32V141.2L329.4 246.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3l-160-160z" />
               </svg>
@@ -783,7 +798,8 @@
           </div>
         </div>
       </div>
-      <div class="px-4 mt-12 sm:max-w-xl md:max-w-full lg:max-w-screen-2xl lg:px-8 bg-[#F9F5FF] mx-auto">
+      <div class="bg-[#F9F5FF] "> 
+      <div class="px-4 mt-12 sm:max-w-xl md:max-w-full lg:max-w-screen-2xl lg:px-8 mx-auto">
         <div class="flex flex-col justify-between py-5 sm:flex-row">
           <p class="text-para text-base">
             Kaihatsu Techno Centre Pvt Ltd @2024 All Rights Reserved.
@@ -820,6 +836,7 @@
           </div>
         </div>
       </div>
+    </div>
     </footer>
   </body>
 
