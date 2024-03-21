@@ -4,13 +4,16 @@
 
 @layer components {
   .menuactive {
-    @apply font-bold text-sec block py-2 px-3 md:p-0  hover:text-sec;
+    @apply font-semibold text-sec block text-base py-2 px-3 md:p-0 hover:text-sec; 
   }
   .menuitem {
-    @apply block py-2 px-3 text-main md:p-0  hover:text-sec;
+    @apply block py-2 px-3 text-main text-base md:p-0  hover:text-sec;
+  }
+  .cont-btn{
+    @apply text-white bg-[#4E8BE4] hover:bg-black focus:ring-4 text-base font-medium px-6 py-3 text-center shadow-[0_17px_35px_0px_#CEDCF2] rounded; 
   }
   .menuitem1 {
-    @apply block py-6  p-4  text-base leading-6  hs-scrollspy-active:text-sec  hs-scrollspy-active:font-bold  focus:border-l-4 focus:border-[#4E8BE4] focus:shadow-2xl capitalize;
+    @apply block py-6  p-4  text-base leading-6  hs-scrollspy-active:text-sec  hs-scrollspy-active:font-bold   hs-scrollspy-active:border-l-4  hs-scrollspy-active:border-[#4E8BE4] hs-scrollspy-active:shadow-2xl capitalize active:font-bold;
   }
   .menuactive1 {
     @apply block text-base font-medium leading-6   active:font-bold focus:outline-none hs-scrollspy-active:font-bold border-l-4 border-[#4E8BE4] my-5 py-6 p-4    shadow-xl;
@@ -19,10 +22,10 @@
     @apply text-sm text-para uppercase;
   }
   .headb {
-    @apply text-2xl font-semibold  text-main capitalize;
+    @apply text-2xl font-semibold  text-main normal-case;
   }
   .headc {
-    @apply text-xl font-semibold  text-main capitalize;
+    @apply text-xl font-semibold  text-main normal-case;
   }
   .p {
     @apply text-base text-para;
@@ -43,6 +46,6 @@
     @apply capitalize inline-flex items-center rounded-2xl bg-[#EE9B9B]/30 px-3   text-center py-1 text-xs font-medium text-[#FF0000]   ring-[#FF0000];
   }
   .table-title{
-    @apply text-left py-3 font-normal text-para px-5 border-r;
+    @apply text-left py-3 font-normal text-para px-5 border-r; 
   }
 }
