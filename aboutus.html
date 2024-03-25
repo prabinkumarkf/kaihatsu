@@ -541,5 +541,19 @@
     </div>
     </footer>
   </body>
+  <script>
+    // JavaScript to handle click event and show active menu
+    const menuItems = document.querySelectorAll('.menuitem1');
 
+    menuItems.forEach(item => {
+      item.addEventListener('click', function(event) {
+        // Remove active class from all menu items
+        menuItems.forEach(item => {
+          item.classList.remove('menuactive1');
+        });
+        // Add active class to clicked menu item
+        event.target.classList.add('menuactive1');
+      });
+    });
+  </script>
 </html>
