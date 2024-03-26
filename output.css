@@ -1450,14 +1450,6 @@ select {
   margin-top: 50px;
 }
 
-.mt-5 {
-  margin-top: 1.25rem;
-}
-
-.ml-5 {
-  margin-left: 1.25rem;
-}
-
 .box-border {
   box-sizing: border-box;
 }
